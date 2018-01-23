@@ -1,0 +1,25 @@
+.footer
+	background-color: $red
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 15px 0 10px
+	&__desc
+		font-size: 12px
+		color: #fefefe
+		line-height: 1.16
+		text-align: right
+		margin: 0
+		+ar
+	&__text
+		+r(780)
+			width: 100%
+	.logo
+		margin-left: 16px
+		+r(780)
+			margin: 30px 0 20px
+		&:hover
+			opacity: .8
+	.layout_flex
+		+r(780)
+			flex-direction: column-reverse

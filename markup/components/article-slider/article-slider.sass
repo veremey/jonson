@@ -1,0 +1,112 @@
+.slider
+	position: relative
+	margin-bottom: 120px
+	+r(780)
+		margin-bottom: 60px
+	&__item
+		width: 100%
+		position: relative
+		overflow: hidden
+	&__pic
+		position: relative
+		width: 100%
+		height: 584px
+	&__img
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate3d(-50%, -50%, 0)
+		min-width: 100%
+		min-height: 100%
+	&__br
+		margin-bottom: 6px
+	&__text
+		position: absolute
+		bottom: 20px
+		left: 50%
+		width: 65%
+		max-width: 650px
+		transform: translate3d(-50%, 0%, 0)
+		text-align: center
+		color: #fefefe
+		+r(780)
+			width: 80%
+	&__title
+		display: inline-block
+		background-color: #d51900
+		padding: 0px 10px
+		margin: 0
+		font-size: 14px
+		line-height: 40px
+		color: #ffffff
+		text-transform: uppercase
+		+ar
+		font-weight: bold
+		+r(520)
+			line-height: 20px
+			padding: 5px 10px
+
+	&__desc
+		font-size: 36px
+		color: #fefefe
+		line-height: 1.33
+		+pb
+		+r(780)
+			font-size: 5vw
+		+r(520)
+			font-size: 24px
+	&__read
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-top: 15px
+	&__link
+		position: relative
+		text-transform: uppercase
+		white-space: nowrap
+		font-size: 18px
+		color: #fefefe
+		padding-right: 56px
+		&:hover
+			opacity: .9
+			.icon-next
+				+trx(10px)
+				opacity: .9
+	.icon-next
+		position: absolute
+		top: -6px
+		right: 0
+		margin-left: 20px
+		width: 16px
+		height: 16px
+		border-radius: 100%
+		padding: 10px
+		background-color: $red
+		fill: #fff
+		+tr(.4s)
+	.slick-slide
+		opacity: .5
+		transform: translate3d(0, 0, 0) scaleY(.9)
+	.slick-current
+		opacity: 1
+		transform: translate3d(0, 0, 0) scale(1)
+	.slick-arrow
+		position: relative
+		top: 290px
+		border: none
+		outline: none
+		background-color: $n
+	.slick-disabled
+		opacity: .3
+		+gray
+		cursor: auto
+
+.slider__btns
+	font-size: 0
+	position: absolute
+	display: flex
+	justify-content: space-between
+	top: 0%
+	left: 11px
+	right: 8px
+	+try(-50%)

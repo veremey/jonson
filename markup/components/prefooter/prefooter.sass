@@ -1,0 +1,40 @@
+.prefooter
+	background-color: #f0efed
+	padding: 28px 0 20px
+	&__link
+		display: block
+		margin: 0
+		color: #404040
+		font-size: 16px
+		line-height: 1.9
+		text-decoration: none
+		cursor: pointer
+		+ar
+		&:hover
+			color: $red
+	&__spy
+		text-align: right
+		+r(780)
+			margin-top: 40px
+	&__spy,
+	&__text
+		+r(780)
+			width: 100%
+			text-align: center
+	&__title
+		font-size: 16px
+		text-transform: uppercase
+		color: $base
+		font-weight: normal
+		margin-bottom: 23px
+	.layout_flex
+		+r(780)
+			flex-direction: column
+
+.soc
+	&__link
+		display: inline-block
+		vertical-align: top
+		margin-left: 7px
+		&:hover
+			opacity: .8

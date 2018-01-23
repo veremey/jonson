@@ -1,0 +1,62 @@
+// File for scss-vars.
+// For example: main colors, paddings and so on.
+$n: transparent
+$body: #fff
+$base: #404040
+$red: #D51900
+
+.icon-menu
+	display: inline-block
+	fill: #BABABA
+	+tr(.4s)
+
+.icon-lupa
+	display: inline-block
+	fill: #BABABA
+	+tr(.4s)
+
+.icon-next
+	display: inline-block
+	fill: #fff
+	+tr(.4s)
+
+.icon-left,
+.icon-right
+	display: inline-block
+	fill: $base
+	+tr(.4s)
+	&:hover
+		fill: $red
+
+.icon-close
+	display: inline-block
+	width: 30px
+	height: 30px
+	position: absolute
+	top: 20px
+	right: 20px
+	background-color: $n
+	outline: none
+	border: none
+	&:before
+		content: ''
+		width: 35px
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		height: 50%
+		border-top: 2px solid #717171
+		transform-origin: 0 center
+		transform: rotate(45deg)
+	&:after
+		content: ''
+		width: 35px
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		height: 50%
+		transform-origin: 0 center
+		transform: rotate(-45deg)
+		border-bottom: 2px solid #717171

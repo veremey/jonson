@@ -1,0 +1,171 @@
+.header,
+.hdr
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 50%
+	width: 50px
+	+trx(-815px)
+	z-index: 20
+	background-color: #FFF
+	+r(1680)
+		+trx(-650px)
+	+r(1320)
+		left: 0px
+		+trx(0)
+	&.is-active
+		bottom: 0
+	&.menu
+		width: 315px
+		max-width: calc(100% - 40px)
+		.header__logo_small
+			right: -50px
+			opacity: 0
+		.header__logo_big
+			left: 50%
+			opacity: 1
+		.header__nav
+			display: block
+
+	&.search
+		width: 410px
+		max-width: calc(100% - 40px)
+		.header__logo_small
+			left: 25px
+			width: 50px
+			height: 100px
+		.header__search
+			display: block
+
+	&__top
+		position: relative
+		height: 100px
+
+	&__logo
+		display: block
+		position: relative
+		height: 100px
+		width: 100%
+		&:hover
+			.header__pic
+				opacity: .8
+		&_small
+			+vcenter
+			display: inline-block
+			z-index: 20
+			background-color: $red
+		&_big
+			position: absolute
+			top: 50%
+			left: 10%
+			transform: translate(-50%, -50%)
+			background-color: $red
+			display: inline-block
+			z-index: 20
+			opacity: 0
+	&__pic
+		+vcenter
+	&__bottom
+		display: flex
+		height: calc(100% - 100px)
+	&__btns
+		display: inline-block
+		min-width: 50px
+		background-color: #F0EFED
+		padding: 1px 0
+	&__btn
+		display: block
+		text-align: center
+		border: none
+		background-color: $n
+		padding: 0
+		margin: 5px auto 0px
+		outline: none
+		&:hover
+			[class^="icon"]
+				fill: #000
+
+	&__nav
+		display: none
+		background-color: #FFF
+		overflow: auto
+		.mCSB_container
+			padding-bottom: 10px
+
+	&__search
+		display: none
+		width: calc(100% - 120px)
+		padding: 30px 23px
+
+.nav
+	padding: 12px 50px 8px 38px
+	font-size: 0
+	&__title
+		list-style: none
+		margin-bottom: 0px
+		color: #807d79
+		font-size: 12px
+		text-transform: uppercase
+		+ar
+		font-weight: normal
+		+ .sublist
+			max-height: none
+	&__item
+		list-style: none
+		border-bottom: 1px solid #E3E2E0
+		&.is-active
+			border-bottom: none
+			.sublist
+				padding: 6px 0 6px 34px
+				max-height: none
+				border-top: 1px solid #E3E2E0
+
+	&__link
+		display: block
+		padding: 5px 0 3px
+		color: $base
+		font-size: 12px
+		line-height: 1.33
+		+ar
+		&:hover
+			color: $red
+
+.sublist
+	max-height: 0
+	overflow: hidden
+	padding: 0 0 0px 34px
+	list-style: none
+
+	&__item
+		margin-bottom: 2px
+	&__link
+		display: block
+		padding: 2px 0
+		color: #807d79
+		font-size: 12px
+		line-height: 1.33
+		+ar
+		&:hover
+			color: $red
+
+.form-search
+	display: block
+	&__fieldset
+		display: block
+#search
+	width: 100%
+	display: block
+	border: none
+	border-bottom: 1px solid #D0D0D0
+	padding: 0 0px
+	font-size: 18px
+	color: #000
+	outline: none
+	+ar
+	&:focus
+		border-bottom: 2px solid #375DA0
+	+placeholder
+		font-size: 18px
+		color: $base
+		+os
+
