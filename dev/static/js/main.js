@@ -2517,6 +2517,11 @@ $(document).ready (function () {
 		trigger: '.header',
 		className: 'is-active menu search'
 	})
+	Global_main.anotherClick({
+		container: '.header',
+		trigger: '.has-sub',
+		className: 'is-active'
+	})
 	Global_main.initScroll({
 		conteiner: '.header__nav'
 	})
@@ -2527,6 +2532,7 @@ $(document).ready (function () {
 
 		$('.' + closeItem).removeClass('is-active search');
 		$('.js-toggler').removeClass('is-active search');
+		('.has-sub').removeClass('is-active');
 
 		return false;
 	});
