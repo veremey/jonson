@@ -5,28 +5,8 @@
         {{> head/head head.defaults}}
     </head>
 
-    <body class="page">
-        %=symbols=%
-
-        <div class="page__wrapper">
-            {{> startscreen/startscreen}}
-
-            <!-- Include your modules here -->
-
-            <div class="layout">
-                {{> news/news}}
-                {{> article-slider/article-slider}}
-
-            </div>
-
-        </div>
-        <footer class="page-footer">
-            {{> prefooter/prefooter}}
-            {{> footer/footer}}
-        </footer>
-
-        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
-        <script src="static/js/main%=hash=%%=min=%.js"></script>
+    <body class="page ">
+      {{> pages/pages}}
     </body>
 
 </html>

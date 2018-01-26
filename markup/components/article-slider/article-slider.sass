@@ -2,6 +2,8 @@
 	position: relative
 	margin-bottom: 120px
 	+r(780)
+		width: calc(100% + 40px)
+		margin-left: -20px
 		margin-bottom: 60px
 	&__item
 		width: 100%
@@ -11,6 +13,9 @@
 		position: relative
 		width: 100%
 		height: 584px
+		+r(780)
+			height: 0
+			padding-top: 58%
 	&__img
 		position: absolute
 		top: 50%
@@ -18,6 +23,9 @@
 		transform: translate3d(-50%, -50%, 0)
 		min-width: 100%
 		min-height: 100%
+		+r(780)
+			height: 100%
+
 	&__br
 		margin-bottom: 6px
 	&__text
@@ -26,11 +34,24 @@
 		left: 50%
 		width: 65%
 		max-width: 650px
-		transform: translate3d(-50%, 0%, 0)
+		transform: translate(-50%, 0%)
 		text-align: center
 		color: #fefefe
+		+r(1025)
+			bottom: 60px
 		+r(780)
-			width: 80%
+			position: relative
+			top: 0
+			left: 0
+			right: auto
+			bottom: auto
+			width: 100%
+			max-width: none
+			padding: 10px 20px 20px
+			background-color: #F0EFED
+			text-align: left
+			color: $base
+			transform: translate(0%, 0%)
 	&__title
 		display: inline-block
 		background-color: #d51900
@@ -53,13 +74,16 @@
 		+pb
 		+r(780)
 			font-size: 5vw
+			color: $base
 		+r(520)
-			font-size: 24px
+			font-size: 16px
 	&__read
 		display: flex
 		align-items: center
 		justify-content: center
 		margin-top: 15px
+		+r(780)
+			justify-content: flex-start
 	&__link
 		position: relative
 		text-transform: uppercase
@@ -67,16 +91,22 @@
 		font-size: 18px
 		color: #fefefe
 		padding-right: 56px
+		+r(780)
+			color: $base
+			font-size: 16px
+		+r(520)
+			font-size: 12px
+			padding-right: 38px
 		&:hover
 			opacity: .9
 			.icon-next
-				+trx(10px)
+				transform: translate(10px, -50%)
 				opacity: .9
 	.icon-next
 		position: absolute
-		top: -6px
+		top: 50%
+		transform: translate(0, -50%)
 		right: 0
-		margin-left: 20px
 		width: 16px
 		height: 16px
 		border-radius: 100%
@@ -84,6 +114,8 @@
 		background-color: $red
 		fill: #fff
 		+tr(.4s)
+		+r(520)
+			padding: 4px
 	.slick-slide
 		opacity: .5
 		transform: translate3d(0, 0, 0) scaleY(.9)
@@ -110,3 +142,5 @@
 	left: 11px
 	right: 8px
 	+try(-50%)
+	+r(1025)
+		display: none

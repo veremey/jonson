@@ -3,6 +3,8 @@
 	width: 100%
 	margin-bottom: 70px
 	overflow: hidden
+	+r(780)
+		margin-bottom: 20px
 	&__slider,
 	&__item,
 	.slick-list,
@@ -13,13 +15,26 @@
 		font-size: 0
 		overflow: hidden
 		z-index: 5
+		+r(780)
+			height: auto
 	&__pic
+		+coverdiv
+		+r(780)
+			position: relative
+			top: 0
+			left: 0
+			right: 0
+			bottom: auto
+			height: 320px
+	&__img
 		position: absolute
 		top: 50%
 		left: 50%
 		min-width: 100%
 		min-height: 100%
 		transform: translate3d(-50%, -50%, 0)
+		+r(780)
+			height: 100%
 	&__content
 		position: relative
 		width: 60%
@@ -27,7 +42,10 @@
 		max-width: 760px
 		margin: 0 auto
 		+r(780)
-			width: 90%
+			width: 100%
+			padding: 20px 20px 30px
+			height: auto
+			background-color: #F0EFED
 		@media (orientation: landscape)
 			width: 70%
 	&__text
@@ -37,6 +55,13 @@
 		+gpu
 		@media (orientation: landscape)
 			bottom: 80px
+		+r(780)
+			position: relative
+			top: 0
+			left: 0
+			right: 0
+			bottom: auto
+
 	&__title
 		font-size: 60px
 		margin-bottom: 25px
@@ -45,15 +70,22 @@
 		+pb
 		+r(780)
 			font-size: 10vw
+			color: $base
 	.read
 		justify-content: flex-start
 		&__link
 			padding-right: 43px
+			+r(780)
+				color: $base
 			+r(520)
-				font-size: 16px
+				font-size: 12px
 	.slick-dots
 		position: absolute
 		bottom: 8px
 		left: 50%
-		+try(-50%)
+		+trx(-50%)
 		z-index: 10
+		padding: 2px 0
+		+r(780)
+			bottom: auto
+			top: 290px

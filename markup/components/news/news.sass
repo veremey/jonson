@@ -1,16 +1,22 @@
 .news
-	margin-left: -30px
+	margin-left: -20px
 	font-size: 0
 	&__more
 		padding-bottom: 65px
 		padding-left: 20px
+		+r(780)
+			padding-bottom: 40px
+		+r(520)
+			padding-bottom: 20px
 		&_line
 			width: 90%
 			max-width: 570px
 			margin: 0 auto
 			padding-bottom: 60px
 			border-bottom: 1px solid #CDCDCD
-			+r(520)
+			+r(1025)
+				padding-bottom: 40px
+			+r(780)
 				padding-bottom: 20px
 	.read
 		&__link
@@ -18,6 +24,10 @@
 			font-size: 24px
 			line-height: 1
 			color: $base
+			+r(780)
+				font-size: 18px
+			+r(520)
+				font-size: 12px
 .info
 	display: inline-block
 	vertical-align: top
@@ -28,8 +38,9 @@
 	margin: 0 0 20px 20px
 	+r(780)
 		width: calc(50% - 20px)
-	+r(520)
-		width: calc(100% - 20px)
+		height: auto
+	// +r(520)
+	// 	width: calc(100% - 20px)
 	&-wide
 		display: inline-block
 		width: calc(66.6666% - 20px)
@@ -39,14 +50,28 @@
 			&__pic
 				height: 370px
 				opacity: .6
+				+r(780)
+					height: 0
+					padding-top: 40%
 			&__text
 				position: absolute
 				left: 35px
 				bottom: 50px
 				width: 80%
 				padding: 0
+				+r(780)
+					position: relative
+					top: 0
+					left: 0
+					right: auto
+					bottom: auto
+					width: 100%
+					background-color: #fff
+					padding: 10px 0
 			&__desc
 				font-size: 24px
+				+r(780)
+					font-size: 18px
 			&__time
 				font-size: 16px
 				margin: 0 0 6px
@@ -56,6 +81,9 @@
 		width: 100%
 		height: 240px
 		overflow: hidden
+		+r(780)
+			height: 0
+			padding-top: 55%
 
 	&__img
 		position: absolute
@@ -64,6 +92,8 @@
 		transform: translate3d(-50%, -50%, 0)
 		min-width: 100%
 		min-height: 100%
+		+r(780)
+			width: 100%
 
 	&__text
 		padding: 5px 0
@@ -74,23 +104,35 @@
 		+pb
 		&_cut
 			+limitLines( $maxLinesPortrait: 3, $maxLinesLandscape: 3, $fgCol: #fff, $bgCol: #fff, $lineHeight: 1.4)
+	&__last
+		text-transform: uppercase
+		color: $red
+		font-size: 12px
+		margin-bottom: 5px
+		+ab
 	&__link
 		font-size: 18px
 		line-height: 1.38
 		color: $base
 		+pb
+		+r(780)
+			font-size: 14px
 		&:hover
 			color: $red
 			opacity: .8
 		&_cut
 			margin-top: 6px
 			+limitLines( $maxLinesPortrait: 3, $maxLinesLandscape: 3, $fgCol: #fff, $bgCol: #fff, $lineHeight: 1.38)
+			+r(780)
+				margin-top: 0
 	&__time
 		display: inline-block
 		margin-bottom: 10px
 		font-size: 12px
 		color: #767676
 		+pb
+		+r(780)
+			margin-bottom: .5em
 	.read
 		justify-content: flex-start
 		margin-top: 15px
@@ -98,6 +140,8 @@
 			padding-right: 33px
 			font-size: 16px
 			color: #767676
+			+r(780)
+				font-size: 12px
 		.icon-next
 			width: 12px
 			height: 12px

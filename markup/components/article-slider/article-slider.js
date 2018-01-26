@@ -9,11 +9,13 @@ $('.slider__container').slick({
 	prevArrow: $('.slid-prev'),
 	nextArrow: $('.slid-next'),
 	responsive: [{
-		breakpoint: 780,
+		breakpoint: 1025,
 		settings: {
 			slidesToShow: 1,
 			centerMode: false,
 			initialSlide: 0,
+			arrows: false,
+			dots: true
 			}
 		}]
 });

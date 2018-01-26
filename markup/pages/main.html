@@ -1,0 +1,29 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body class="page is-animated">
+        %=symbols=%
+
+        <div class="page__wrapper">
+            {{> header/header}}
+            {{> startscreen/startscreen}}
+
+            <div class="layout-big nav-open">
+                {{> news/news}}
+                {{> article-slider/article-slider}}
+            </div>
+
+        </div>
+        <footer class="page-footer">
+            {{> prefooter/prefooter}}
+            {{> footer/footer}}
+        </footer>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+        <script src="static/js/main%=hash=%%=min=%.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,34 @@
+
+.module
+	position: relative
+	background-color: #F7F7F5
+	// padding: 0 10%
+	&__wrap
+		margin: 0 auto
+		width: 100%
+		max-width: 730px
+	&__pic
+		position: absolute
+		display: inline-block
+		vertical-align: top
+		width: 176px
+		height: 176px
+		margin-right: 40px
+		border-radius: 100%
+		overflow: hidden
+		+try(-10px)
+	&__img
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		min-width: 100%
+		min-height: 100%
+	&__text
+		display: inline-block
+		width: calc(350px + 206px)
+		padding: 20px 0 20px 206px
+	.desc
+		&_m
+			&_limit-2
+				+limitLines( $maxLinesPortrait: 2, $maxLinesLandscape: 2, $fgCol: #F7F7F5, $bgCol: #F7F7F5, $lineHeight: 1.5)

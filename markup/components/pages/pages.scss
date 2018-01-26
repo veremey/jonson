@@ -1,0 +1,15 @@
+
+.page-list{
+	width: 200px;
+	margin: 30px auto;
+	list-style-type: decimal;
+	li {
+		display: block;
+		margin-bottom: 10px;
+		list-style-type: decimal;
+	}
+	a {
+		color: #000;
+		font-size: 16px;
+	}
+}

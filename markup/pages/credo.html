@@ -1,0 +1,36 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body class="page">
+        %=symbols=%
+
+        <div class="page__wrapper">
+            {{> header/header}}
+
+            <div class="layout-big nav-open">
+                <div class="credo__top">
+                    <p class="credo__desc"></p>
+
+                </div>
+                <div class="credo">
+                    <div class="wrapp-700">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer class="page-footer">
+            {{> prefooter/prefooter}}
+            {{> footer/footer}}
+        </footer>
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="static/js/main%=hash=%%=min=%.js"></script>
+    </body>
+
+</html>

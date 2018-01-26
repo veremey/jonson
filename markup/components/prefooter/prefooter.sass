@@ -1,6 +1,8 @@
 .prefooter
 	background-color: #f0efed
 	padding: 28px 0 20px
+	+r(520)
+		padding: 15px 0 20px
 	&__link
 		display: block
 		margin: 0
@@ -10,23 +12,31 @@
 		text-decoration: none
 		cursor: pointer
 		+ar
+		+r(520)
+			font-size: 14px
+			line-height: 1.33
 		&:hover
 			color: $red
+
 	&__spy
 		text-align: right
 		+r(780)
-			margin-top: 40px
+			margin-top: 20px
 	&__spy,
 	&__text
 		+r(780)
 			width: 100%
 			text-align: center
+		+r(520)
+			text-align: left
 	&__title
 		font-size: 16px
 		text-transform: uppercase
 		color: $base
 		font-weight: normal
 		margin-bottom: 23px
+		+r(520)
+			margin-bottom: 15px
 	.layout_flex
 		+r(780)
 			flex-direction: column

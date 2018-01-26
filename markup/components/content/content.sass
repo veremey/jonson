@@ -1,0 +1,81 @@
+
+.photo
+	width: 100%
+	overflow: hidden
+	&__pic
+		font-size: 0
+	&__img
+		width: 100%
+	&__text
+		position: absolute
+		bottom: 60px
+		left: 15%
+		color: #fff
+		z-index: 10
+	&_title
+		margin-bottom: 70px
+	.read
+		justify-content: flex-start
+
+.in-shadow
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		height: 50%
+		+g($n, #000)
+
+.context
+	display: flex
+	justify-content: space-between
+	&__text
+		display: inline-block
+		flex: 0 0 60%
+	&__pic
+		display: inline-block
+		vertical-align: top
+		flex: 0 0 37%
+		font-size: 0
+	&__img
+		width: 100%
+
+.quote
+	display: flex
+	height: auto
+	align-items: center
+	flex: 0 0 35%
+	&__line
+		position: relative
+		margin: 0 auto 20px
+		text-align: center
+		overflow: hidden
+		font-size: 50px
+		line-height: 1
+		color: $red
+		margin: 0
+		&:before,
+		&:after
+			content: ''
+			position: relative
+			top: .3em
+			display: inline-block
+			vertical-align: top
+			width: 50%
+			height: 4px
+			background: $n url('../img/content/q-pic.png') 0 0 repeat-x
+		&:before
+			left: -20px
+			margin-left: -50%
+		&:after
+			left: 20px
+			margin-right: -50%
+	&__desc
+		font-size: 26px
+		line-height: 1.38
+		color: #767676
+		padding: 0 0 20px 0
+		text-align: center
+		+pr

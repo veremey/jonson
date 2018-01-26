@@ -1,6 +1,29 @@
 
 $(document).ready (function () {
 
+	if($(document).width() > (1550-16)){
+		$('.header').addClass('is-active menu');
+		$('.layout-big').addClass('nav-open');
+
+		Global_main.anotherClick({
+			container: '.header',
+			trigger: '.header',
+			className: 'is-active menu search'
+		})
+
+	}
+
+	$(window).on('resize', function () {
+		if($(document).width() < (1550-16)){
+			$('.header').removeClass('is-active menu');
+			$('.layout-big').removeClass('nav-open');
+
+		} else {
+			$('.header').addClass('is-active menu');
+			$('.layout-big').addClass('nav-open');
+		}
+	});
+
 	$('.header__btn').on('click', function () {
 		$('.hdr').attr('class', 'header');
 
@@ -8,11 +31,6 @@ $(document).ready (function () {
 		changeHeader($data);
 	});
 
-	Global_main.anotherClick({
-		container: '.header',
-		trigger: '.header',
-		className: 'is-active menu search'
-	})
 	Global_main.anotherClick({
 		container: '.header',
 		trigger: '.has-sub',

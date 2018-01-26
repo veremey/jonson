@@ -4,6 +4,7 @@ $n: transparent
 $body: #fff
 $base: #404040
 $red: #D51900
+$border: #E8E7E4
 
 .icon-menu
 	display: inline-block
@@ -34,10 +35,12 @@ $red: #D51900
 	height: 30px
 	position: absolute
 	top: 20px
-	right: 20px
+	right: 30px
 	background-color: $n
 	outline: none
 	border: none
+	+r(1025)
+		top: 80px
 	&:before
 		content: ''
 		width: 35px

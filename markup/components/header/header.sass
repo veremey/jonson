@@ -3,108 +3,202 @@
 	position: fixed
 	top: 0
 	bottom: 0
-	left: 50%
+	left: 0
 	width: 50px
-	+trx(-815px)
 	z-index: 20
-	background-color: #FFF
-	+r(1680)
-		+trx(-650px)
-	+r(1320)
-		left: 0px
-		+trx(0)
-	&.is-active
-		bottom: 0
+	transition: all 1s
+	+clr
+	+r(1025)
+		width: 100%
+		height: 50px
+		width: 100%
+		bottom: auto
+	// &.is-active
+
 	&.menu
-		width: 315px
-		max-width: calc(100% - 40px)
-		.header__logo_small
-			right: -50px
-			opacity: 0
-		.header__logo_big
-			left: 50%
-			opacity: 1
-		.header__nav
-			display: block
+		.header
+			&__logos
+				opacity: 0
+				+r(1025)
+					opacity: 1
+			&_menu
+				+trx(0%)
+				+r(1025)
+					+trx(0%)
+					left: 0px
 
 	&.search
-		width: 410px
-		max-width: calc(100% - 40px)
-		.header__logo_small
-			left: 25px
-			width: 50px
-			height: 100px
-		.header__search
-			display: block
-
-	&__top
-		position: relative
+		.header_menu
+			+trx(-100%)
+			transition: .4s
+		.header_search
+			transition: .4s .2s
+			+trx(0%)
+		.header__logos
+			z-index: 10
+			opacity: 1
+	&__logos
+		position: fixed
+		top: 0
+		left: 0
 		height: 100px
-
-	&__logo
-		display: block
-		position: relative
-		height: 100px
-		width: 100%
-		&:hover
-			.header__pic
-				opacity: .8
-		&_small
-			+vcenter
-			display: inline-block
-			z-index: 20
-			background-color: $red
-		&_big
-			position: absolute
-			top: 50%
-			left: 10%
-			transform: translate(-50%, -50%)
-			background-color: $red
-			display: inline-block
-			z-index: 20
-			opacity: 0
-	&__pic
-		+vcenter
-	&__bottom
-		display: flex
-		height: calc(100% - 100px)
+		background-color: $red
+		z-index: 10
+		opacity: 1
+		+tr( .4s .2s)
+		+r(1550)
+			opacity: 1
+		.header__logo_big
+			display: none
+		+r(1025)
+			z-index: 25
+			height: 50px
+			width: calc(100% - 150px)
+			.header__logo_small
+				display: none
+			.header__logo_big
+				display: inline-block
+				height: 50px
+				width: 200px
+				max-width: 100%
 	&__btns
+		position: relative
 		display: inline-block
-		min-width: 50px
+		width: 50px
+		height: 100%
 		background-color: #F0EFED
 		padding: 1px 0
+		margin-top: 100px
+		box-shadow: 0 0 4px rgba(0, 0, 0, .5)
+		z-index: 20
+		font-size: 0
+		+r(1025)
+			display: flex
+			align-items: center
+			justify-content: flex-end
+			height: 100%
+			width: 150px
+			margin: 0 0 0 auto
+
 	&__btn
 		display: block
 		text-align: center
 		border: none
 		background-color: $n
 		padding: 0
-		margin: 5px auto 0px
+		margin: 10px auto 20px
 		outline: none
+		+r(1025)
+			display: inline-block
+			margin: 0
+			width: 75px
+			height: 50px
 		&:hover
 			[class^="icon"]
 				fill: #000
+		&_search
+			+r(1025)
+				position: relative
+				&:before
+					content: ''
+					position: absolute
+					top: 0
+					bottom: 0
+					left: 0
+					width: 1px
+					background-color: #CCCCCB
+	&__inner
+		position: absolute
+		top: 0
+		bottom: 0
+		// left: -50px
+		left: 0
+		height: 100%
+		font-size: 0
+		+tr(.4s .8s)
+		+r(1025)
+			top: 50px
+
+	&__logo
+		position: relative
+		display: inline-block
+		vertical-align: top
+		height: 100px
+		width: 100%
+		background-color: $red
+		z-index: 20
+		+tr(.4s)
+		&:hover
+			.header__pic
+				opacity: .8
+		&_big
+			opacity: 1
+			.header__pic
+				max-width: 100%
+				+r(1025)
+					position: absolute
+					top: 50%
+					transform: translate(0, -50%) translateZ(0)
+					left: 20px
+				+r(400)
+					width: 80%
+		&_small
+			width: 50px
+			+tr(.4s)
+
+	&__pic
+		will-change: transform
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%) translateZ(0)
+
+	&_menu
+		width: 315px
+		background-color: #FAF9F7
+		transition: .4s .2s
+		+trx(-90%)
+		// left: 0
+		+r(1550)
+			+trx(-90%)
+		+r(1025)
+			width: 100%
+			height: 100vh
+			padding-top: 20px
+			// transform: translate(0, 0)
+			+trx(-90%)
+			left: -100px
 
 	&__nav
-		display: none
-		background-color: #FFF
+		background-color: #FAF9F7
 		overflow: auto
+		height: 100%
+		padding: 0 50px 0 88px
+		+r(700)
+			padding: 0 20px
 		.mCSB_container
 			padding-bottom: 10px
-
-	&__search
-		display: none
-		width: calc(100% - 120px)
-		padding: 30px 23px
+	&_search
+		width: 363px
+		padding: 130px 30px 0 0
+		background-color: #FFF
+		box-shadow: 0 0 4px rgba(0, 0, 0, .4)
+		transition: .4s
+		+trx(-100%)
+		+r(1025)
+			width: 100%
+			height: 100vh
+			left: 0
+			padding-top: 190px
 
 .nav
-	padding: 12px 50px 8px 38px
+	padding: 12px 0px 8px
 	font-size: 0
 	&__title
 		list-style: none
 		margin-bottom: 0px
 		color: #807d79
-		font-size: 12px
+		font-size: 14px
 		text-transform: uppercase
 		+ar
 		font-weight: normal
@@ -119,7 +213,6 @@
 				padding: 6px 0 6px 34px
 				max-height: none
 				border-top: 1px solid #E3E2E0
-
 	&__link
 		display: block
 		padding: 5px 0 3px
@@ -129,6 +222,8 @@
 		+ar
 		&:hover
 			color: $red
+		+r(1025)
+			font-size: 16px
 
 .sublist
 	max-height: 0
@@ -147,11 +242,9 @@
 		+ar
 		&:hover
 			color: $red
+		+r(1025)
+			font-size: 14px
 
-.form-search
-	display: block
-	&__fieldset
-		display: block
 #search
 	width: 100%
 	display: block
@@ -169,3 +262,20 @@
 		color: $base
 		+os
 
+.form-search
+	display: block
+	padding-left: 74px
+	+r(1025)
+		padding-left: 20px
+	&__fieldset
+		display: block
+
+
+#search_cursor
+	display: inline-block
+	animation: cursor 1s infinite step-end
+	background-color: red
+
+@keyframes cursor
+	50%
+		background: transparent
