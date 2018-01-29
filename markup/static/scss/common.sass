@@ -41,6 +41,7 @@ body
 		margin: 0 auto
 		max-width: 1146px
 		padding: 0 20px
+		+tr(.3s)
 		&.nav-open
 			max-width: calc(1146px + 365px)
 			padding-left: 365px
@@ -129,6 +130,10 @@ p
 	margin: 0
 
 .wrap
+	&_740
+		width: 96%
+		max-width: 740px
+		margin: 0 auto
 	&_760
 		width: 96%
 		max-width: 760px
@@ -208,41 +213,40 @@ p
 		left: 400px
 		width: 800px
 		margin: 0 auto 20px
+		padding: 0 20px
 		text-align: center
 		overflow: hidden
 		+trx(-50%)
-		&:before,
-		&:after
-			content: ''
-			position: relative
-			top: .5em
-			display: inline-block
-			vertical-align: top
-			width: 50%
-			height: 0
-			border-bottom: 2px solid $border
-		&:before
-			left: -.5em
-			margin-left: -50%
-		&:after
-			left: 10px
-			margin-right: -50%
 		&_wrap
-			&:before,
+			display: inline-block
+			background-color: #fff
+			padding: 0 30px
+			margin: 0 auto
+			&:before
+				content: ''
+				position: absolute
+				top: .5em
+				left: 0
+				right: 0
+				height: 0
+				border-bottom: 2px solid $border
+				z-index: -2
 			&:after
 				content: ''
 				position: absolute
-				top: calc(.5em + 2px)
 				bottom: 0
-				width: 2px
-				background-color: $border
-			&:before
+				top: .5em
 				left: 0
-			&:after
 				right: 0
+				border: 2px solid $border
+				border-top: none
+				border-bottom: none
+
 	&_small_line
 		width: 300px
 		left: 25%
+		background-color: #fff
+		&
 	&__direction
 		display: inline-block
 		color: #949494

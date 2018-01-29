@@ -4,13 +4,12 @@ $(document).ready (function () {
 	if($(document).width() > (1550-16)){
 		$('.header').addClass('is-active menu');
 		$('.layout-big').addClass('nav-open');
-
+	} else {
 		Global_main.anotherClick({
 			container: '.header',
 			trigger: '.header',
 			className: 'is-active menu search'
 		})
-
 	}
 
 	$(window).on('resize', function () {
@@ -29,6 +28,10 @@ $(document).ready (function () {
 
 		var $data = $(this).data('name');
 		changeHeader($data);
+
+		if(!$('.header').is('.is-active')){
+			$('.layout-big').removeClass('nav-open');
+		}else {$('.layout-big').addClass('nav-open');}
 	});
 
 	Global_main.anotherClick({
@@ -72,11 +75,11 @@ function changeHeader(arg) {
 	for (var i = classes.length - 1; i >= 0; i--) {
 		if(arg == classes[i]){
 			// $('.header').removeClass('menu search is-active');
-			$('.header').attr('class', 'hdr');
+			$('.header').attr('class', 'hdr is-animated ');
 			// console.log('some');
 		}
 		 else {
-			$('.header').removeClass('menu search').addClass('is-active ' + arg);
+			$('.header').removeClass('menu search').addClass('is-active  is-animated ' + arg);
 		}
 
 	}

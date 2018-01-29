@@ -30,6 +30,23 @@ $(function () {
 			}
 		});
 
+		Animation.initGlobalAnimations({
+			container: '.layout-big',
+			selfTriggeredElems: {
+				el1: {
+					selector: '.slider',
+					triggerHook: .9,
+					class: 'is-animated'
+				},
+				el2: {
+					selector: '.photo',
+					triggerHook: .9,
+					class: 'is-animated'
+				},
+
+			}
+		});
+
 	});
 
 
