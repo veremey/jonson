@@ -3,10 +3,16 @@
 	position: relative
 	background-color: #F7F7F5
 	// padding: 0 10%
+	+r(780)
+		position: relative
+		width: calc(100% + 40px)
+		margin-left: -20px
 	&__wrap
 		margin: 0 auto
 		width: 100%
 		max-width: 730px
+		+r(780)
+			text-align: center
 	&__pic
 		position: absolute
 		display: inline-block
@@ -17,6 +23,12 @@
 		border-radius: 100%
 		overflow: hidden
 		+try(-10px)
+		+r(780)
+			position: relative
+			width: 130px
+			height: 130px
+			+try(-30px)
+			margin: 0 auto
 	&__img
 		position: absolute
 		top: 50%
@@ -28,6 +40,11 @@
 		display: inline-block
 		width: calc(350px + 206px)
 		padding: 20px 0 20px 206px
+		+r(780)
+			width: 100%
+			padding: 0 20px 20px
+			.read
+				justify-content: center
 	.desc
 		&_m
 			&_limit-2

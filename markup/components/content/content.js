@@ -1,12 +1,14 @@
 
 $( function() {
     $( document ).tooltip({
-      items: "[title]",
+      items: ".details",
       content: function() {
-        var element = $( this );
-        if ( element.is( "[title]" ) ) {
-          return element.child('.details_info');
+          var $text = $(this).children('.details__box').html();
+          return $text;
+        },
+        position: {
+          my: "center bottom-20",
+          at: "center top"
         }
-      }
     });
   } );

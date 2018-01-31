@@ -43,6 +43,16 @@ $(function () {
 					triggerHook: .9,
 					class: 'is-animated'
 				},
+				el3: {
+					selector: '.wrap',
+					triggerHook: .9,
+					class: 'is-animated'
+				},
+				el4: {
+					selector: '.quote',
+					triggerHook: .9,
+					class: 'is-animated'
+				},
 
 			}
 		});

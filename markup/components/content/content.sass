@@ -2,6 +2,9 @@
 .photo
 	width: 100%
 	overflow: hidden
+	+r(780)
+		width: calc(100% + 40px)
+		margin-left: -20px
 	&__pic
 		font-size: 0
 	&__img
@@ -9,9 +12,27 @@
 	&__text
 		position: absolute
 		bottom: 60px
-		left: 15%
+		left: 10%
 		color: #fff
 		z-index: 10
+		+r(780)
+			position: relative
+			top: 0
+			left: 0
+			right: auto
+			bottom: auto
+			width: 100%
+			padding: 20px 20px 30px
+			height: auto
+			background-color: #F0EFED
+			color: $base
+			.read
+				justify-content: flex-start
+				&__link
+					padding-right: 43px
+					+r(780)
+						font-size: 12px
+						color: $base
 	&_title
 		margin-bottom: 70px
 	.read
@@ -31,22 +52,43 @@
 .context
 	display: flex
 	justify-content: space-between
+	+r(780)
+		flex-wrap: wrap
+		flex-direction: column
 	&__text
 		display: inline-block
 		flex: 0 0 60%
+		+r(780)
+			flex: 0 0 auto
 	&__pic
 		display: inline-block
 		vertical-align: top
 		flex: 0 0 37%
 		font-size: 0
+		+r(780)
+			position: relative
+			width: 100%
+			height: 0
+			padding-top: 50%
+			overflow: hidden
+			margin-bottom: 15px
+			flex: 0 0 auto
 	&__img
 		width: 100%
+		+r(780)
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
 
 .quote
 	display: flex
 	height: auto
 	align-items: center
 	flex: 0 0 35%
+	+r(780)
+		flex: 0 0 auto
+		flex-wrap: wrap
 	&__line
 		position: relative
 		margin: 0 auto 20px
@@ -79,3 +121,99 @@
 		padding: 0 0 20px 0
 		text-align: center
 		+pr
+
+.about
+	display: flex
+	justify-content: space-between
+	box-shadow: 0px 3px 13px 0px rgba(217, 217, 217, 0.75)
+	padding: 40px 45px 50px 85px
+	background-color: #FFF
+	+r(780)
+		flex-wrap: wrap
+		flex-direction: column-reverse
+		padding: 30px
+
+	&__text
+		display: inline-block
+		width: 54%
+		+r(780)
+			width: 100%
+	&__what
+		color: $red
+		text-transform: uppercase
+		font-size: 16px
+		line-height: 1.5
+		margin-bottom: 30px
+		+ab
+		+r(780)
+			font-size: 12px
+	.title__ls
+		font-weight: 700
+	.btn
+		display: inline-block
+		vertical-align
+		margin-top: 50px
+		width: 234px
+		max-width: 100%
+		background-color: #E8E7E4
+		border-radius: 50px
+		text-align: center
+		padding: 14px 20px
+		font-size: 18px
+		color: $base
+		border: none
+		outline: none
+		cursor: pointer
+		+pb
+		+r(780)
+			font-size: 14px
+			margin-top: 30px
+		&:hover
+			box-shadow: inset 0 0 4px 1px #fff
+			+tr(.4s)
+	&__pic
+		font-size: 0
+		width: 40%
+		+r(780)
+			width: 100%
+			text-align: center
+			margin-bottom: 20px
+	&__img
+		max-width: 100%
+		display: inline-block
+		vertical-align: top
+
+.details
+	position: relative
+	border-bottom: 1px solid $red
+	&__box
+		display: none
+	&__content
+		display: inline-block
+		background-color: #fff
+		width: 422px
+		padding: 24px 20px
+		box-shadow: inset 0 0 4px 1px #fff
+		font-size: 12px
+		+ar
+		font-style: italic
+		+r(520)
+			width: auto
+	&__title
+		color: $red
+		font-size: 12px
+		+ar
+		font-style: italic
+
+.ui-tooltip
+	width: 422px
+	max-width: 100%!important
+	box-shadow: 0 0 6px rgba(0, 0, 0, .4)
+	padding: 0
+	+r(520)
+		width: auto
+		max-width: 94%!important
+
+
+
+
