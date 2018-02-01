@@ -21,11 +21,20 @@ body
 	font-size: 13px
 	line-height: 1.33
 	// -webkit-font-smoothing: antialiased !important
-
-.page
+	&.no-move
+		position: fixed
 
 .page__wrapper
-	min-height: 100%
+	position: relative
+	min-height: calc(100% - 245px)
+	padding-top: 1px
+	+r(780)
+		min-height: calc(100% - 426px)
+	+r(650)
+		min-height: calc(100% - 439px)
+	+r(520)
+		min-height: calc(100% - 370px)
+
 
 * html .page__wrapper
 	height: 100%
@@ -41,10 +50,11 @@ body
 		max-width: 1146px
 		padding: 0 20px
 		overflow: hidden
-		+tr(.3s)
+		+tr(.4s .2s)
 		&.nav-open
 			max-width: calc(1146px + 365px)
 			padding-left: 365px
+			+tr(.4s .2s)
 		+r(1550)
 			margin: 0 auto
 
@@ -104,6 +114,34 @@ body
 			color: $base
 			text-transform: none
 
+.go-top
+	position: fixed
+	display: inline-block
+	right: 30px
+	bottom: 40px
+	// opacity: 0
+	width: 40px
+	height: 40px
+	cursor: pointer
+	z-index: 20
+	+tr(.4s)
+	&:before,
+	&:after
+		content: ''
+		position: absolute
+		bottom: 2px
+		width: 60%
+		height: 4px
+		border-right: 4px
+		background-color: #ccc
+	&:before
+		left: 4px
+		transform-origin: 0 0
+		transform: rotate(-43deg)
+	&:after
+		right: 4px
+		transform-origin: 100% 100%
+		transform: rotate(45deg)
 
 h1, h2, h3, h4, h5, h6
 	margin: 0 0 .8em
@@ -125,9 +163,11 @@ a
 	text-decoration: none
 	outline: none
 	cursor: pointer
-
 p
 	margin: 0
+
+[tabindex="0"]
+	outline: none
 
 .wrap
 	&_740
@@ -150,18 +190,26 @@ p
 		width: 96%
 		max-width: 836px
 		margin: 0 auto
+		+r(780)
+			width: 100%
 	&_910
 		width: 96%
 		max-width: 910px
 		margin: 0 auto
+		+r(780)
+			width: 100%
 	&_940
 		width: 96%
 		max-width: 940px
 		margin: 0 auto
+		+r(780)
+			width: 100%
 	&_970
 		width: 96%
 		max-width:
 		margin: 0 auto
+		+r(780)
+			width: 100%
 	&_1020
 		width: 96%
 		max-width: 1020px
@@ -189,6 +237,7 @@ p
 		font-size: 48px
 		line-height: 1.25
 		color: $base
+		margin-bottom: .8em
 		+pb
 		&.is-regular
 			+pr
@@ -207,6 +256,7 @@ p
 		font-weight: normal
 		+r(780)
 			font-size: 18px
+			+pb
 		.title_line_wrap
 			&:before,
 			&:after
@@ -251,8 +301,9 @@ p
 		color: #404040
 		+pr
 		+r(780)
-			font-size: 14px
+			font-size: 16px
 			line-height: 1.24
+			+pb
 		.title_line_wrap
 			&:before,
 			&:after
@@ -325,10 +376,13 @@ p
 		padding-right: .5em
 		border-right: 2px solid $border
 		+ab
+		+r(780)
+			margin-right: .8em
 		+r(520)
 			font-size: 12px
 			line-height: 1.1
 			margin: 0
+			margin-right: .8em
 		&_detail
 			vertical-align: top
 			font-size: 18px
@@ -339,7 +393,6 @@ p
 				font-size: 12px
 				line-height: 1.1
 				margin: 0
-
 
 /*- desc -*/
 .desc
@@ -352,6 +405,13 @@ p
 		+r(780)
 			font-size: 14px
 			line-height: 1.28
+	&_c
+		font-size: 20px
+		line-height: 1.2
+		color: #767676
+		+ar
+		+r(780)
+			font-size: 14px
 	&_l
 		font-size: 18px
 		line-height: 1.3333
@@ -395,6 +455,8 @@ p
 			margin-bottom: 50px
 	&_80
 		margin-bottom: 80px
+		+r(780)
+			margin-bottom: 40px
 	&_40
 		margin-bottom: 40px
 
@@ -412,11 +474,15 @@ p
 		background-color: #E8E7E4
 		color: $base
 		border-radius: 50px
+		+pb
 		&:hover
 			box-shadow: inset 0 0 4px 1px #fff
+			opacity: .8
 
 .mt-70
 	margin-top: 70px
+.mt-30
+	margin-top: 30px
 
 
 .hide_mob
@@ -425,3 +491,29 @@ p
 
 .is-center
 	text-align: center
+
+.more__mob
+	&_box
+		+r(780)
+			display: none
+	&_footer
+		display: none
+		+r(780)
+			display: block
+	&_link
+		position: relative
+		display: inline-block
+		vertical-align: top
+		font-size: 18px
+		color: $red
+		+ar
+		&:after
+			content: ''
+			position: absolute
+			top: .4em
+			left: calc(100% + 10px)
+			display: inline-block
+			vertical-align: top
+			background: #fff url('../img/content/icon-arrow-down.png') 0 0 no-repeat
+			width: 14px
+			height: 9px

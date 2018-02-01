@@ -12,7 +12,7 @@
 	&__text
 		position: absolute
 		bottom: 60px
-		left: 10%
+		left: 12%
 		color: #fff
 		z-index: 10
 		+r(780)
@@ -35,6 +35,12 @@
 						color: $base
 	&_title
 		margin-bottom: 70px
+		+r(780)
+			margin-bottom: 30px
+		&.box_40
+			margin-bottom: 40px
+			+r(780)
+				margin-bottom: 20px
 	.read
 		justify-content: flex-start
 
@@ -205,14 +211,39 @@
 		+ar
 		font-style: italic
 
-.ui-tooltip
+
+
+#qtip-details__tooltip
 	width: 422px
 	max-width: 100%!important
 	box-shadow: 0 0 6px rgba(0, 0, 0, .4)
 	padding: 0
+	background-color: #fff
+	border: none
+	.qtip-content
+		padding: 0
 	+r(520)
 		width: auto
 		max-width: 94%!important
+	.qtip-close
+		display: inline-block
+		top: 0!important
+		right: 0
+		width: 30px
+		height: 30px
+		background-color: #fff
+		border: none
+		padding: 0
+		margin: 0
+		outline: none
+		.ui-icon.ui-icon-close
+			display: inline-block
+			line-height: 30px
+			width: 30px
+			height: auto
+			font-size: 0
+			background-image: url('/static/img/content/icon-close.png')
+			background-position: 50% 50%
 
 
 

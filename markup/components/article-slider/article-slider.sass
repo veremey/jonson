@@ -34,7 +34,7 @@
 		left: 50%
 		width: 65%
 		max-width: 650px
-		transform: translate(-50%, 0%)
+		transform: translate3d(-50%, 0%, 0)
 		text-align: center
 		color: #fefefe
 		+r(1025)
@@ -65,6 +65,7 @@
 		font-weight: bold
 		+r(780)
 			font-size: 10px
+			margin-bottom: 10px
 		+r(520)
 			line-height: 20px
 			padding: 5px 10px
@@ -75,7 +76,7 @@
 		line-height: 1.33
 		+pb
 		+r(780)
-			font-size: 5vw
+			font-size: 16px
 			color: $base
 		+r(520)
 			font-size: 16px
@@ -86,6 +87,7 @@
 		margin-top: 15px
 		+r(780)
 			justify-content: flex-start
+			margin-top: 20px
 	&__link
 		position: relative
 		text-transform: uppercase

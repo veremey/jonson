@@ -1,0 +1,98 @@
+
+.alfabet
+	border: 1px solid $border
+	border-right: none
+	border-left: none
+	padding: 10px 50px 0
+	+r(780)
+		padding: 10px 0
+	&__list
+		font-size: 0
+		padding: 0
+		margin: 0 auto
+		list-style: none
+	&__item
+		display: inline-block
+		padding: 0 7px
+		list-style: none
+		+r(780)
+			padding: 0 2px
+		&.is-active
+			.alfabet__link
+				color: $red
+	&__link
+		display: block
+		font-size: 30px
+		margin-bottom: 10px
+		color: $base
+		text-transform: uppercase
+		+pr
+		+tr(.4s)
+		+r(780)
+			font-size: 16px
+			line-height: 1.28
+			margin-bottom: 2px
+		+r(650)
+			font-size: 14px
+		&:hover
+			color: $red
+
+.pill
+	&__box
+		// display: none
+		padding: 40px 5px 20px
+		+r(780)
+			padding: 20px 5px 20px
+	&__list
+		display: none
+		font-size: 0
+		list-style: none
+		padding: 0
+		margin: 0
+		&.is-active
+			display: block
+	&__item
+		display: inline-block
+		padding: 0 4px
+		margin-bottom: 4px
+		+r(780)
+			margin-bottom: 0
+		&.is-active
+			.pill__link
+				color: $red
+				+pb
+	&__link
+		display: block
+		font-size: 18px
+		line-height: 1.6
+		color: $base
+		+pr
+		+r(.4s)
+		+r(780)
+			font-size: 14px
+			line-height: 1.7
+		&:hover
+			color: $red
+
+.medicine
+	background-color: #fff
+	box-shadow: 0px 3px 13px 0px rgba(217, 217, 217, 0.75)
+	padding: 50px 80px
+	+r(780)
+		padding: 15px 10px 30px
+	&__item
+		font-size: 18px
+		color: $base
+		line-height: 1.6
+		+ar
+		+r(780)
+			font-size: 14px
+			line-height: 1.28
+	&__mark
+		color: $red
+		font-size: 18px
+		line-height: 1.6
+		+ab
+		+r(780)
+			font-size: 14px
+			line-height: 1.28

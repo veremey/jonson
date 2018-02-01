@@ -2,14 +2,14 @@
 	<div class="layout-big layout_flex">
 		<div class="prefooter__text">
 			{{#each prefooter.link}}
-				<p class="prefooter__link">{{this}}</p>
+				<a href="/" class="prefooter__link"  tabindex="0">{{this}}</p>
 			{{/each}}
 		</div>
 		<div class="prefooter__spy">
 			<h5 class="prefooter__title">Следите за нами:</h5>
 			<div class="soc">
 				{{#each prefooter.soc}}
-					<a href="#" class="soc__link">
+					<a href="#" class="soc__link"  tabindex="0">
 						<img src='static/img/general/{{this}}' alt="soc-icon">
 					</a>
 				{{/each}}

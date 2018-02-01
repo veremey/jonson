@@ -1,1 +1,37 @@
+<div class="wrap960"  tabindex="0">
+	<h3 class="title__lm  title_line"><span class="title_line_wrap">Какие заболевания мы лечим</span></h3>
+</div>
 
+<div class="alfabet wrap_760 is-center"  tabindex="0">
+	<ul class="alfabet__list">
+		{{#each disease.item}}
+			<li class="alfabet__item js-tab {{#if mod}}{{mod}}{{/if}}" data-tab={{name}}>
+				<a class="alfabet__link">{{title}}</a>
+			</li>
+		{{/each}}
+	</ul>
+</div>
+
+<div class="pill wrap_940 is-center"  tabindex="0">
+
+	{{#each disease.pill}}
+		<div class="pill__box pill__box_{{box.tab}}">
+			{{#each box}}
+				<ul class="pill__list pill__list_{{tab}}">
+					{{#each item}}
+						<li class="pill__item js-tab {{#if mod}}{{mod}}{{/if}}" data-tab={{title}}>
+							<a href="/" class="pill__link">{{name}}</a>
+						</li>
+					{{/each}}
+				</ul>
+			{{/each}}
+
+		</div>
+	{{/each}}
+</div>
+
+<div class="medicine  is-center box_40"  tabindex="0">
+	{{#each disease.medicine}}
+		<div class="medicine__item medicine__item_{{tab}}">{{{text}}}</div>
+	{{/each}}
+</div>

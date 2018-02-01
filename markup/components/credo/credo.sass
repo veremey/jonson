@@ -1,0 +1,78 @@
+
+.credo
+	margin-bottom: 30px
+	+r(1025)
+		margin-top: 50px
+	+r(780)
+		position: relative
+		background-color: #fff
+		box-shadow: 0px 3px 12.48px 3.52px rgba(197, 197, 197, 0.75)
+		padding: 20px 10px
+		z-index: 5
+	&__wrap
+		position: relative
+		width: 96%
+		max-width: 990px
+		margin: 0 auto
+		padding: 30px 150px 70px 140px
+		box-shadow: 0px 3px 12.48px 3.52px rgba(197, 197, 197, 0.75)
+		background-color: #fff
+		z-index: 5
+		+r(780)
+			width: 100%
+			padding: 0
+			margin-bottom: 0px
+			box-shadow: none
+
+	&__top
+		text-align: right
+		position: relative
+		width: 96%
+		max-width: 990px
+		margin: 0 auto 70px
+		z-index: 5
+		+r(780)
+			text-align: center
+			margin: 0 0 15px
+	&__title
+		font-size: 46px
+		color: $red
+		margin-bottom: .8em
+		+ar
+		+r(780)
+			display: none
+	&__desc
+		font-size: 18px
+		line-height: 1.66
+		+ar
+		+r(780)
+			font-size: 16px
+			line-height: 1.25
+			+ar
+		&_span
+			color: $red
+			+am
+
+	&__img
+		display: inline-block
+		vertical-align
+		margin-top: 40px
+		width: auto
+		max-width: 100%
+
+#parallaxParent
+	position: absolute
+	top: 140px
+	bottom: 0
+	left: 0
+	right: 0
+	overflow: hidden
+	z-index: 1
+
+#parallaxParent > *
+	height: 100%
+	position: relative
+	top: 0
+	background-size: contain
+
+
