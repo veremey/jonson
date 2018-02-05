@@ -7,6 +7,8 @@ var data = {pages: {
 		'disease.html',
 		'medical-devices.html',
 		'help.html',
-		'evidence.html'
+		'evidence.html',
+		'news.html',
+		'social.html'
 	]
 }};

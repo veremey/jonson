@@ -4014,6 +4014,92 @@ body .ui-tooltip {
   border-width: 2px;
 }
 
+.startscreen {
+  opacity: 0;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  -webkit-transition: opacity .5s .3s, -webkit-transform .5s .3s;
+  transition: opacity .5s .3s, -webkit-transform .5s .3s;
+  transition: transform .5s .3s, opacity .5s .3s;
+  transition: transform .5s .3s, opacity .5s .3s, -webkit-transform .5s .3s;
+}
+
+.startscreen.is-animated {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.slider,
+.info,
+.photo,
+.wrap {
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  -webkit-transition: opacity .5s .3s, -webkit-transform .5s .3s;
+  transition: opacity .5s .3s, -webkit-transform .5s .3s;
+  transition: transform .5s .3s, opacity .5s .3s;
+  transition: transform .5s .3s, opacity .5s .3s, -webkit-transform .5s .3s;
+}
+
+.slider.is-animated,
+.info.is-animated,
+.photo.is-animated,
+.wrap.is-animated {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.header {
+  opacity: 0;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  -webkit-transition: opacity .5s .3s, -webkit-transform .5s .3s;
+  transition: opacity .5s .3s, -webkit-transform .5s .3s;
+  transition: transform .5s .3s, opacity .5s .3s;
+  transition: transform .5s .3s, opacity .5s .3s, -webkit-transform .5s .3s;
+}
+
+.header.is-animated {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.quote {
+  opacity: 0;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  -webkit-transition: opacity .5s .3s, -webkit-transform .5s .3s;
+  transition: opacity .5s .3s, -webkit-transform .5s .3s;
+  transition: transform .5s .3s, opacity .5s .3s;
+  transition: transform .5s .3s, opacity .5s .3s, -webkit-transform .5s .3s;
+}
+
+.quote.is-animated {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.illnes__item {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: opacity .5s .3s, -webkit-transform .5s .3s;
+  transition: opacity .5s .3s, -webkit-transform .5s .3s;
+  transition: transform .5s .3s, opacity .5s .3s;
+  transition: transform .5s .3s, opacity .5s .3s, -webkit-transform .5s .3s;
+}
+
+.illnes__item.is-animated {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 .accordion {
   position: relative;
   padding-top: 0px;
@@ -4177,92 +4263,6 @@ body .ui-tooltip {
     font-size: 12px;
     font-family: 'akzidenzgroteskpro-light-webfont', Arial, sans-serif;
   }
-}
-
-.startscreen {
-  opacity: 0;
-  -webkit-transform: translateY(-50px);
-          transform: translateY(-50px);
-  -webkit-transition: opacity .5s .3s, -webkit-transform .5s .3s;
-  transition: opacity .5s .3s, -webkit-transform .5s .3s;
-  transition: transform .5s .3s, opacity .5s .3s;
-  transition: transform .5s .3s, opacity .5s .3s, -webkit-transform .5s .3s;
-}
-
-.startscreen.is-animated {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-.slider,
-.info,
-.photo,
-.wrap {
-  opacity: 0;
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
-  -webkit-transition: opacity .5s .3s, -webkit-transform .5s .3s;
-  transition: opacity .5s .3s, -webkit-transform .5s .3s;
-  transition: transform .5s .3s, opacity .5s .3s;
-  transition: transform .5s .3s, opacity .5s .3s, -webkit-transform .5s .3s;
-}
-
-.slider.is-animated,
-.info.is-animated,
-.photo.is-animated,
-.wrap.is-animated {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-.header {
-  opacity: 0;
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
-  -webkit-transition: opacity .5s .3s, -webkit-transform .5s .3s;
-  transition: opacity .5s .3s, -webkit-transform .5s .3s;
-  transition: transform .5s .3s, opacity .5s .3s;
-  transition: transform .5s .3s, opacity .5s .3s, -webkit-transform .5s .3s;
-}
-
-.header.is-animated {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-.quote {
-  opacity: 0;
-  -webkit-transform: translateX(50px);
-          transform: translateX(50px);
-  -webkit-transition: opacity .5s .3s, -webkit-transform .5s .3s;
-  transition: opacity .5s .3s, -webkit-transform .5s .3s;
-  transition: transform .5s .3s, opacity .5s .3s;
-  transition: transform .5s .3s, opacity .5s .3s, -webkit-transform .5s .3s;
-}
-
-.quote.is-animated {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-.illnes__item {
-  opacity: 0;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: opacity .5s .3s, -webkit-transform .5s .3s;
-  transition: opacity .5s .3s, -webkit-transform .5s .3s;
-  transition: transform .5s .3s, opacity .5s .3s;
-  transition: transform .5s .3s, opacity .5s .3s, -webkit-transform .5s .3s;
-}
-
-.illnes__item.is-animated {
-  opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
 }
 
 .slider {
@@ -4586,6 +4586,10 @@ body .ui-tooltip {
     font-size: 12px;
     color: #404040;
   }
+}
+
+.photo__text.mod_b {
+  bottom: 20px;
 }
 
 .photo_title {
@@ -5301,6 +5305,7 @@ body .ui-tooltip {
 }
 
 .big-count .counter__wrap {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5309,6 +5314,17 @@ body .ui-tooltip {
   padding: 0 25px;
   background-image: -webkit-linear-gradient(left, #d9d8d8 0%, #ececec 17%, white 51%, #f3f3f3 79%, #e6e6e6 100%);
   background-image: linear-gradient(90deg, #d9d8d8 0%, #ececec 17%, white 51%, #f3f3f3 79%, #e6e6e6 100%);
+}
+
+.big-count .counter__wrap:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -20px;
+  right: -20px;
+  box-shadow: inset 0px 0px 30px 6px #9a9a9a;
+  pointer-events: none;
 }
 
 @media only screen and (max-width: 780px) {
@@ -5445,8 +5461,11 @@ body .ui-tooltip {
   bottom: 0;
   right: -1px;
   width: 1px;
-  background: -webkit-linear-gradient(top, transparent 0%, #c1c1c1 35%, #c1c1c1 65%, transparent 100%);
-  background: linear-gradient(to bottom, transparent 0%, #c1c1c1 35%, #c1c1c1 65%, transparent 100%);
+  background-color: rgba(193, 193, 193, 0.4);
+}
+
+.counter_num:last-child:after {
+  content: none;
 }
 
 .counter_num span {

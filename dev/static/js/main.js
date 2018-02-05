@@ -5760,35 +5760,40 @@ $(document).ready(function () {
         $('.peoples').css({'top': -peoples});
     }, 1000);
 
-   // setInterval(
-   //  function () {
-   //  	peoples = -1;
-   //  }, 599999);
-
    setInterval(function () {
    	peoples = 0;
-   }, 1000000);
+   }, 600000);
 
    window.setInterval(
     function () {
     	tenpeoples +=(90 / 60);
         $('.tenpeoples').css({'top': -tenpeoples});
-    }, 60000);
+    }, 10000);
 
    setInterval(function () {
    	tenpeoples = 0;
-   }, 60000000);
+   }, 6000000);
 
    window.setInterval(
     function () {
-    	hungredpeoples +=1;
+    	hungredpeoples +=(90 / 60);
         $('.hungredpeoples').css({'top': -hungredpeoples});
-    }, 6000000);
+    }, 1000000);
+
+   setInterval(function () {
+   	hungredpeoples = 0;
+   }, 600000000);
+
    window.setInterval(
     function () {
-    	thouthendpeoples +=1;
+    	thouthendpeoples +=(90 / 60);
         $('.thouthendpeoples').css({'top': -thouthendpeoples});
-    }, 6000000000);
+    }, 100000000);
+
+   setInterval(function () {
+   	thouthendpeoples = 0;
+   }, 60000000000);
+
 
 	// setInterval(function () {
 	// 	deg = -1;
@@ -6178,6 +6183,8 @@ if (typeof window.document.createElement('div').style.webkitLineClamp !== 'undef
 
 
 
+
+
 if($('.startscreen__item').length > 1) {
 	$('.startscreen__slider').slick({
 		dots: true,
@@ -6186,6 +6193,4 @@ if($('.startscreen__item').length > 1) {
 		slidesToShow: 1
 	});
 }
-
-
 //# sourceMappingURL=main.js.map
