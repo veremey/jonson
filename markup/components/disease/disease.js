@@ -13,11 +13,9 @@ $(document).ready (function () {
 		}
 		if($(this).is('.pill__item')){
 			var $way = $(this).data('tab');
-			$('.medicine__item'+$way).addClass('is-active');
+			$('.medicine__item').removeClass('is-active');
+			$('.medicine__item_'+$way).addClass('is-active');
 		}
 	});
 });
 
-$('.drugs-letter_even').each(function () {
-	$(this).find(a).html();
-});

@@ -211,8 +211,6 @@
 		+ar
 		font-style: italic
 
-
-
 #qtip-details__tooltip
 	width: 422px
 	max-width: 100%!important
@@ -246,5 +244,307 @@
 			background-position: 50% 50%
 
 
+.infoblock
+	display: flex
+	width: 100%
+	padding: 50px 45px
+	align-items: center
+	background-color: #fff
+	box-shadow: 0px 0px 13px 0px rgba(217, 217, 217, 0.75)
+	margin-bottom: 20px
+	+r(780)
+		display: block
+		padding: 20px
+	&__pic
+		display: inline-block
+		vertical-align
+		width: 150px
+		min-width: 150px
+		height: 70px
+		margin-right: 80px
+		+r(1320)
+			width: 90px
+			min-width: 90px
+			margin-right: 40px
+		+r(780)
+			display: block
+			width: 36px
+			min-width: 36px
+			height: 36px
+			// width: 100%
+			// max-width: 100%
+			margin: 0 auto 20px
+	&__img
+		width: auto
+		max-width: 100%
+		height: 70px
+		max-height: 100%
+	&__link
+		font-size: 30px
+		line-height: 1.1
+		margin: 0
+		color: $red
+		+ar
+		&:hover
+			text-decoration: underline
+		+r(780)
+			font-size: 14px
+	.desc_xl
+		margin: 0
+		+r(780)
+			margin-bottom: 6px
 
+.question
+	width: 100%
+	background-color: #fff
+	box-shadow: 0px 3px 13px 0px rgba(217, 217, 217, 0.75)
+	padding: 54px 0 40px
+	+r(780)
+		padding: 15px 020px
+	&__form
+		width: 624px
+		margin: 0 auto
+		+r(780)
+			width: 100%
+	&__fieldset
+		display: block
+		width: 100%
+	&__textarea
+		width: 100%
+		height: 105px
+		background: #F5F7F7
+		border: none
+		outline: none
+		padding: 12px 30px
+		margin-bottom: 16px
+		resize: none
+		border-radius: 16px
+		+placeholder
+			font-size: 14px
+			color: $base
+			letter-spacing: .075em
+			+ar
+	&__inp
+		display: block
+		width: 100%
+		background: #F5F7F7
+		border: none
+		outline: none
+		padding: 12px 30px
+		margin-bottom: 16px
+		border-radius: 16px
+		+placeholder
+			font-size: 14px
+			color: $base
+			letter-spacing: .075em
+			+ar
+	.title__l
+		color: $red
+		+pr
+
+.question__fieldset
+	.selectric
+		display: block
+		width: 100%
+		background: #F5F7F7
+		border: none
+		outline: none
+		padding: 0px 30px
+		margin-bottom: 16px
+		border-radius: 16px
+		.button
+			right: 20px
+			color: $base
+			&:after
+				+arr(12, 7, #000, b)
+	.selectric .label
+		margin: 0
+		font-size: 14px
+		line-height: 40px
+		height: 40px
+		color: $base
+		letter-spacing: .075em
+		+ar
+
+
+.illnes__wrap
+	.counter
+		text-align: center
+		+r(1025)
+			display: flex
+			justify-content: space-around
+			align-items: center
+			margin: 15px 0
+			text-align: left
+		&__wrap
+			display: inline-block
+			margin: 0 auto 15px
+			padding: 0 14px
+			background-image: linear-gradient( 90deg, rgb(217,216,216) 0%, rgb(236,236,236) 17%, rgb(255,255,255) 51%, rgb(243,243,243) 79%, rgb(230,230,230) 100%)
+			+r(1025)
+				margin: 0 6px 0 0
+				min-width: 230px
+				width: 230px
+			+r(780)
+				margin: 0 6px 0 0
+				min-width: 0
+				width: auto
+			+r(500)
+				padding: 0 2px
+				margin: 0 0px 0 0
+
+		&__desc
+			font-size: 0
+			span
+				font-size: 48px
+				color: $red
+				padding: 0 3px
+				position: relative
+				display: inline-block
+				vertical-align
+				+ab
+				+r(780)
+					font-size: 36px
+				+r(500)
+					padding: 0 2px
+				&:after
+					content: ''
+					position: absolute
+					top: .4em
+					bottom: .4em
+					right: -1px
+					width: 1px
+					background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(193, 193, 193,1) 35%, rgba(193, 193, 193,1) 65%, rgba(0,0,0,0) 100%)
+				&:last-child:after
+					content: none
+		&__pic
+			margin: 0 auto 15px
+			display: inline-block
+			vertical-align: top
+			width: 75px
+			height: 75px
+			+r(1025)
+				height: auto
+				max-height: 100%
+				width: 51px
+				margin: 0 0 3px
+		&__help
+			display: block
+			+r(1025)
+				height: 65px
+				display: inline-block
+				vertical-align: top
+				text-align: center
+				.title__tt
+					font-size: 10px
+					line-height: .8
+
+.big-count
+	.counter
+		display: flex
+		align-items: center
+		justify-content: center
+		overflow: hidden
+		&__wrap
+			// display: inline-block
+			display: flex
+			height: 90px
+			margin: 0 20px 15px
+			padding: 0 25px
+			background-image: linear-gradient( 90deg, rgb(217,216,216) 0%, rgb(236,236,236) 17%, rgb(255,255,255) 51%, rgb(243,243,243) 79%, rgb(230,230,230) 100%)
+			+r(780)
+				height: 70px
+			+r(650)
+				padding: 0 4px
+			+r(500)
+				width: auto
+				min-width: 0
+				height: 44px
+				padding: 0 2px
+				margin: 0 5px 0 0
+
+		&__desc
+			font-size: 0
+			span
+				font-size: 103px
+				color: $red
+				padding: 4px 3px
+				position: relative
+				display: inline-block
+				vertical-align
+				line-height: 80px
+				+ab
+				+r(780)
+					font-size: 60px
+					line-height: 64px
+				+r(500)
+					line-height: 44px
+					font-size: 36px
+					padding: 0 2px
+				&:after
+					content: none
+				&:before
+					content: none
+				// &:after
+				// 	content: ''
+				// 	position: absolute
+				// 	top: .4em
+				// 	bottom: .4em
+				// 	right: -1px
+				// 	width: 1px
+				// 	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(193, 193, 193,1) 35%, rgba(193, 193, 193,1) 65%, rgba(0,0,0,0) 100%)
+				// &:last-child:after
+				// 	content: none
+		&__pic
+			margin: 0 auto 15px
+			display: inline-block
+			vertical-align: top
+			width: 75px
+			height: 75px
+			+r(1025)
+				height: auto
+				max-height: 100%
+				width: 51px
+				margin: 0 0 3px
+			+r(500)
+				width: 35px
+
+		&__help
+			display: inline-block
+			+r(500)
+				height: 47px
+				vertical-align: top
+				text-align: center
+			// 	.title__tt
+			// 		font-size: 10px
+			// 		line-height: .8
+		.title__tt
+			margin: 0
+			+r(500)
+				font-size: 10px
+
+#counter
+	.counter__wrap
+		overflow: hidden
+.counter_num
+	position: relative
+	display: inline-block
+	vertical-align: top
+	width: 50px
+	+r(650)
+		width: 32px
+	+r(500)
+		width: 22px
+	&:after
+		content: ''
+		position: absolute
+		top: 0px
+		bottom: 0
+		right: -1px
+		width: 1px
+		// height: 50px
+		background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(193, 193, 193,1) 35%, rgba(193, 193, 193,1) 65%, rgba(0,0,0,0) 100%)
+	span
+		display: block!important
+		line-height: 1
 

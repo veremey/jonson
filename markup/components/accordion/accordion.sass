@@ -1,0 +1,101 @@
+
+.accordion
+	position: relative
+	padding-top: 0px
+	+r(780)
+		padding-top: 10px
+	&:before
+		content: ''
+		position: absolute
+		top: -10px
+		left: 50%
+		width: 200px
+		height: 20px
+		max-width: 96%
+		display: inline-block
+		vertical-align: top
+		+trx(-50%)
+		background: #fff url('../img/general/acord.svg')
+	&__item
+		position: relative
+		padding: 25px 135px 25px 24px
+		border-top: 2px solid $border
+		cursor: pointer
+		+r(780)
+			padding: 15px 40px 15px 0
+		&:first-child
+			border-top: none
+		&:hover
+			.accordion__btn
+				&:before
+					transform: translate(-50%, -50%) rotate(40deg)
+				&:after
+					transform: translate(-50%, -50%) rotate(130deg)
+		&.is-active
+			.accordion__text
+				display: block
+				transform: rotateX(0deg)
+				+tr(.2s)
+			.accordion__btn
+				&:before
+					transform: translate(-50%, -50%) rotate(90deg)
+				&:after
+					transform: translate(-50%, -50%) rotate(270deg)
+			.accordion__text
+				padding-top: 17px
+
+	&__btn
+		position: absolute
+		right: 10px
+		top: 22px
+		display: inline-block
+		vertical-align
+		width: 28px
+		height: 28px
+		border-radius: 100%
+		padding: 0
+		margin: 0
+		border: none
+		outline: none
+		background-color: $border
+		+r(780)
+			top: 9px
+			right: 0
+		&:before,
+		&:after
+			content: ''
+			position: absolute
+			top: 50%
+			left: 50%
+			height: 14px
+			width: 2px
+			background-color: #333333
+			transform: translate(-50%, -50%)
+			transform-origin: 50% 50%
+			+tr(.4s)
+		&:after
+			transform: translate(-50%, -50%) rotate(90deg)
+		&:hover
+			&:before
+				transform: translate(-50%, -50%) rotate(40deg)
+			&:after
+				transform: translate(-50%, -50%) rotate(130deg)
+	&__title
+		font-size: 18px
+		color: #333
+		margin: 0
+		+pr
+		+r(780)
+			font-size: 14px
+	&__text
+		display: none
+		transform: rotateX(90deg)
+		+tr(.4s)
+	&__desc
+		font-size: 15px
+		line-height: 1.66
+		color: #333
+		+pr
+		+r(780)
+			font-size: 12px
+			+al

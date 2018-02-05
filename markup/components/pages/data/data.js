@@ -4,6 +4,9 @@ var data = {pages: {
 		'credo.html',
 		'content.html',
 		'corporte-culture.html',
-		'disease.html'
+		'disease.html',
+		'medical-devices.html',
+		'help.html',
+		'evidence.html'
 	]
 }};

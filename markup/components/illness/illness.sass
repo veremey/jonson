@@ -1,0 +1,122 @@
+
+.illnes
+	margin-left: -20px
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	box-sizing: border-box
+	+r(650)
+		margin: 0
+	&__item
+		position: relative
+		display: flex
+		// flex-direction: column
+		width: calc(100% - 20px)
+		// height: 200px
+		min-height: 345px
+		margin-left: 20px
+		box-sizing: border-box
+
+		margin-bottom: 20px
+		background-color: #fff
+		box-shadow: 0px 3px 13px 0px rgba(217, 217, 217, 0.75)
+		overflow: hidden
+		+r(1025)
+			flex: 1 0 auto //?
+		+r(840)
+			width: calc(50% - 20px)
+		+r(650)
+			width: 100%
+			margin: 0 0 20px 0
+			min-height: 250px
+		&.no-shadow
+			box-shadow: none
+		&.no-offset
+			margin: 0
+			padding: 0
+			width: 100%
+		&.mod_reverse
+			+r(1025)
+				flex-direction: column-reverse!important
+				padding: 10px 0
+			.illnes__wrap
+				+r(1025)
+					padding: 10px 15px
+
+		&_2-3
+			width: calc(66.66% - 20px)
+			&.no-offset
+				width: 66.66%
+		&_1-2
+			width: calc(50% - 20px)
+			&.no-offset
+				width: 50%
+		&_1-3
+			width: calc(33.33% - 20px)
+			&.no-offset
+				width: 50%
+		&_column
+			flex-direction: column
+	&__wrap
+		display: flex
+		flex-direction: column
+		min-height: 345px
+		height: 100%
+		width: 100%
+		padding: 35px 40px 40px 30px
+		+r(1025)
+			height: auto //?
+		+r(650)
+			padding: 10px 15px 34px 15px
+	&__pic
+		margin-bottom: 20px
+	&__img
+		height: 46px
+		width: auto
+		max-width: 60px
+	&__title
+		color: $red
+		font-size: 20px
+		line-height: 1.2
+		margin-bottom: .9em
+		+pr
+	&__photo
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		min-height: 100%
+		min-width: 100%
+	&_help
+		+r(780)
+			margin: 0
+		.illnes__item,
+		.illnes__wrap
+			min-height: 220px
+			+r(1025)
+				min-height: 120px
+		.illnes__item
+			&_1-3
+				+r(1025)
+					width: calc(50% - 20px)
+				+r(780)
+					width: 100%
+					margin: 0 0 20px
+			&_2-3
+				+r(1025)
+					width: calc(50% - 20px)
+					flex-direction: column
+					.illnes__item_1-2
+						width: 100%
+				+r(780)
+					width: 100%
+					margin: 0 0 20px
+		.title__tt
+			+r(1025)
+				margin-bottom: 0
+	.read
+		margin-top: auto
+	.desc_s
+		margin-bottom: 20px
+
+

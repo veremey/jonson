@@ -1,0 +1,684 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>j&amp;j</title>
+		<meta content="" name="description">
+		<meta content="" name="keywords">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta content="telephone=no" name="format-detection">
+		<!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
+		<meta name="HandheldFriendly" content="true">
+		
+		
+		
+		<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Prata&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+		
+		<!--[if (gt IE 9)|!(IE)]><!--><link href="static/css/main.css" rel="stylesheet" type="text/css"><!--<![endif]-->
+		
+		
+		<link rel="icon" type="image/png" href="favicon.png">
+		<script>
+		    (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+		</script>
+		
+	</head>
+
+	<body class="page is-animated">
+		<svg xmlns="http://www.w3.org/2000/svg" style="border: 0 !important; clip: rect(0 0 0 0) !important; height: 1px !important; margin: -1px !important; overflow: hidden !important; padding: 0 !important; position: absolute !important; width: 1px !important;" class="root-svg-symbols-element">
+    <symbol id="icon-back" viewBox="0 0 477.175 477.175">
+      <path d="M145.188 238.575l215.5-215.5c5.3-5.3 5.3-13.8 0-19.1s-13.8-5.3-19.1 0l-225.1 225.1c-5.3 5.3-5.3 13.8 0 19.1l225.1 225c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.3-5.3 5.3-13.8 0-19.1l-215.4-215.5z"/>
+    </symbol>
+    <symbol id="icon-left" viewBox="0 0 256 256">
+      <path d="M207.093 30.187L176.907 0l-128 128 128 128 30.186-30.187L109.28 128z"/>
+    </symbol>
+    <symbol id="icon-lupa" viewBox="0 0 307.68 409.53">
+      <title>search</title><path d="M155.34 0c7.45 1.3 15 2.13 22.32 4 48.49 12.18 83.67 40.84 101.79 87.52 22 56.65 10.89 108.17-29.05 153.65a99 99 0 0 1-8.63 8.32c-3 2.66-6.13 5.11-9.54 7.93l75.47 130.77-30 17.37c-.87-1.41-1.65-2.6-2.35-3.82q-35.56-61.57-71-123.19c-1.77-3.08-3.24-3.47-6.48-2.28-53.59 19.51-102.85 11.31-146.83-24.74-27.3-22.38-43.73-51.89-49-86.77C-5.4 119.55 8.46 76.69 43.9 41.5 68.2 17.37 97.84 3.99 132 .74a16 16 0 0 0 2.63-.7h20.8zm-10.12 255.61c61.93-.19 110.93-49.93 110-113.05-.9-59.88-50.11-107.8-110.55-107.6-61.93.2-110.85 49.89-109.82 112.74.96 60.27 49.9 107.54 110.37 107.91z"/>
+    </symbol>
+    <symbol id="icon-menu" viewBox="0 0 344.339 344.339">
+      <path d="M0 46.06h344.339v29.52H0zm0 110.446h344.339v29.52H0zm0 112.242h344.339v29.531H0z"/>
+    </symbol>
+    <symbol id="icon-next" viewBox="0 0 477.175 477.175">
+      <path d="M360.731 229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z"/>
+    </symbol>
+    <symbol id="icon-right" viewBox="0 0 306 306">
+      <path d="M94.35 0l-35.7 35.7L175.95 153 58.65 270.3l35.7 35.7 153-153z"/>
+    </symbol></svg>
+
+		<div class="page__wrapper" >
+			<!-- <div class="header is-active menu"> -->
+			<div class="header ">
+					<div class="header__logos">
+						<a href="#" class="header__logo header__logo_small " tabindex="0">
+							<img src="static/img/general/logo-small.png" alt="logo small" class="header__pic">
+						</a>
+						<a href="#" class="header__logo header__logo_big " >
+							<img src="static/img/general/logo.png" alt="logo dig" class="header__pic">
+						</a>
+					</div>
+					<div class="header__btns">
+						<button class="header__btn" data-name="menu" tabindex="0">
+							
+			            <svg class="icon-menu" width="25" height="25">
+			                <use xlink:href="#icon-menu"></use>
+			            </svg>
+			        
+						</button>
+						<button class="header__btn header__btn_search" data-name="search" tabindex="0">
+							
+			            <svg class="icon-lupa" width="25" height="25">
+			                <use xlink:href="#icon-lupa"></use>
+			            </svg>
+			        
+						</button>
+					</div>
+			
+					<div class="header__inner header_menu">
+						<a href="#" class="header__logo header__logo_big hide_mob" >
+							<img src="static/img/general/logo.png" alt="logo dig" class="header__pic">
+						</a>
+						<nav class="header__nav">
+							<ul class="nav">
+								<li class="nav__title">Компания</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">Наше Кредо</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">История</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">Новости</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">Корпоративная культура</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">Социальная ответственность</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">Кодекс делового поведения</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">Карьера</a>
+								</li>
+							</ul>
+			
+							<ul class="nav">
+								<li class="nav__title">Подразделения</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">Потребительские товары</a></li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">Лекарственные средства</a></li>
+								<li class="nav__item has-sub">
+									<a href="#" class="nav__link">Изделия медицинского назначения и оборудование</a>
+			
+									<ul class="sublist">
+										<li class="sublist__item">
+											<a href="#" class="sublist__link">Хирургия</a></li>
+										<li class="sublist__item">
+											<a href="#" class="sublist__link">Травматология и ортопедия</a></li>
+										<li class="sublist__item">
+											<a href="#" class="sublist__link">Кардиология/другие специальности</a></li>
+										<li class="sublist__item">
+											<a href="#" class="sublist__link">В помощь пациентам</a></li>
+									</ul>
+			
+								</li>
+							</ul>
+			
+							<ul class="nav">
+								<li class="nav__title has-sub">Контакты</li>
+								<ul class="sublist">
+									<li class="sublist__item">
+										<a href="#" class="sublist__link">Центральный офис</a></li>
+									<li class="sublist__item">
+										<a href="#" class="sublist__link">Региональные офисы</a></li>
+									<li class="sublist__item">
+										<a href="#" class="sublist__link">Контакты для СМИ</a></li>
+								</ul>
+							</ul>
+						</nav>
+					</div>
+			
+					<div class="header__inner header_search">
+						<button class='icon-close js-close' data-close="header"></button>
+						<form action="/" method="POST" autocomplete="on" class="form-search">
+							<fieldset class="form-search__fieldset">
+								<input type="text" name="search" id="search" placeholder="Поиск по сайту">
+								<label for="" id="search_cursor"></label>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			<div class="layout-big is-animated ">
+				<div class="wrap wrap_910  box_80"  tabindex="0">
+					<h4 class="title__lm title_line is-regular">
+						<span class="title_line_wrap"> Лекарственные средства</span>
+					</h4>
+					<div class="photo photo_title box_40 ">
+						<div class="photo__pic">
+							<img class="photo__img" src="static/img/content/img-20.jpg" alt="">
+						</div>
+					</div>
+				</div>
+
+				<h4 class="title__lm title_line is-regular">
+					<span class="title_line_wrap"> Лекарственные средства</span>
+				</h4>
+				<div class="news box_40">
+					<div class="info"  tabindex="0">
+						<div class="info__pic">
+							<img src="static/img/content/new-2.jpg" class="info__img" alt="picture">
+						</div>
+
+						<div class="info__text">
+							<p class="info__desc">
+								<time datetime="2017-10-03T08:23:11+07:00" class="info__time">03 октября, 2017</time>
+							</p>
+							<a href="#" class="info__link info__link_cut">Дуглас Уоллес стал лауреатом Премии Пола Янссена за достижения в области биомедицинских исследований биомедицинских исследований</a>
+						</div>
+					</div>
+
+					<div class="info"  tabindex="0">
+						<div class="info__pic">
+							<img src="static/img/content/new-3.jpg" class="info__img" alt="picture">
+						</div>
+
+						<div class="info__text">
+							<p class="info__desc">
+								<time datetime="2017-10-03T08:23:11+07:00" class="info__time">03 октября, 2017</time>
+							</p>
+							<a href="#" class="info__link info__link_cut">Компания «Янссен» запускает сайт www.schizophrenia24x7.ru в помощь пациентам с шизофренией пациентам с шизофренией</a>
+						</div>
+					</div>
+
+					<div class="info"  tabindex="0">
+						<div class="info__pic">
+							<img src="static/img/content/new-4.jpg" class="info__img" alt="picture">
+						</div>
+
+						<div class="info__text">
+							<p class="info__desc">
+								<time datetime="2017-10-03T08:23:11+07:00" class="info__time">03 октября, 2017</time>
+							</p>
+							<a href="#" class="info__link info__link_cut">«Джонсон & Джонсон» представляет новое направление CERENOVUS</a>
+						</div>
+					</div>
+
+					<div class="is-center">
+						<a class="btn btn-more" href="#">Показать больше</a>
+					</div>
+				</div>
+
+				<div class="wrap wrap_740 box_40"  tabindex="0">
+					<p class="desc_l">Компания Janssen является фармацевтическим подразделением международной корпорации Johnson & Johnson — крупнейшего разработчика и производителя продуктов в области здравоохранения, одной из десяти ведущих фармацевтических компаний на российском рынке. Компания Janssen представляет в России инновационные лекарственные средства для оказания медицинской помощи при лечении социально-значимых заболеваний, а также для лечения и улучшения качества жизни пациентов.</p>
+					<br>
+					<p class="desc_l">Информация, опубликованная на настоящем сайте, предназначена исключительно для ознакомительных целей и не должна считаться консультацией по вопросам медицины или здравоохранения, равно как не должна использоваться для постановки диагноза или лечения при каких-либо индивидуальных проблемах со здоровьем.</p>
+				</div>
+
+				<div class="box_40">
+					
+					<div class="illnes ">
+							<div class="illnes__item illnes__item_1-3">
+								<div class="illnes__wrap">
+									<div class="illnes__pic">
+										<img class="illnes__img" src=static/img/general/01.svg alt="illnes">
+									</div>
+									<h6 class="illnes__title">Алкогольная и наркотическая (опийная) зависимость</h6>
+									<p class="desc_s">По официальным данным в России 18% населения зависимы от алкоголя и 3% — от наркотикой опийной группы.</p>
+									<div class="read read_small">
+										<a href="#" class="read__link">Подробнее
+											
+					            <svg class="icon-next" width="25" height="25">
+					                <use xlink:href="#icon-right"></use>
+					            </svg>
+					        
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="illnes__item illnes__item_1-3">
+								<div class="illnes__wrap">
+									<div class="illnes__pic">
+										<img class="illnes__img" src=static/img/general/02.svg alt="illnes">
+									</div>
+									<h6 class="illnes__title">Вирус иммунодефициита челове́ка</h6>
+									<p class="desc_s">ВИЧ — вирус иммунодефицита человека (ретровирус из рода лентивирусов), вызывающий вирусное заболевание — ВИЧ-инфекцию.</p>
+									<div class="read read_small">
+										<a href="#" class="read__link">Подробнее
+											
+					            <svg class="icon-next" width="25" height="25">
+					                <use xlink:href="#icon-right"></use>
+					            </svg>
+					        
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="illnes__item illnes__item_1-3">
+								<div class="illnes__wrap">
+									<div class="illnes__pic">
+										<img class="illnes__img" src=static/img/general/03.svg alt="illnes">
+									</div>
+									<h6 class="illnes__title">Гастроэнтерология</h6>
+									<p class="desc_s">Заболевания желудочно-кишечного тракта входят в десятку наиболее распространенных болезней современности.</p>
+									<div class="read read_small">
+										<a href="#" class="read__link">Подробнее
+											
+					            <svg class="icon-next" width="25" height="25">
+					                <use xlink:href="#icon-right"></use>
+					            </svg>
+					        
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="illnes__item illnes__item_1-3">
+								<div class="illnes__wrap">
+									<div class="illnes__pic">
+										<img class="illnes__img" src=static/img/general/04.svg alt="illnes">
+									</div>
+									<h6 class="illnes__title">Гематология</h6>
+									<p class="desc_s">Гематология — это раздел медицины, который изучает функции крови и кроветворных органов, их строение, болезни системы крови и их лечение.</p>
+									<div class="read read_small">
+										<a href="#" class="read__link">Подробнее
+											
+					            <svg class="icon-next" width="25" height="25">
+					                <use xlink:href="#icon-right"></use>
+					            </svg>
+					        
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="illnes__item illnes__item_1-3">
+								<div class="illnes__wrap">
+									<div class="illnes__pic">
+										<img class="illnes__img" src=static/img/general/05.svg alt="illnes">
+									</div>
+									<h6 class="illnes__title">Гепатит С</h6>
+									<p class="desc_s">Гепатит C (HCV) – это инфекционное заболевание печени, вызываемое вирусом.</p>
+									<div class="read read_small">
+										<a href="#" class="read__link">Подробнее
+											
+					            <svg class="icon-next" width="25" height="25">
+					                <use xlink:href="#icon-right"></use>
+					            </svg>
+					        
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="illnes__item illnes__item_1-3">
+								<div class="illnes__wrap">
+									<div class="illnes__pic">
+										<img class="illnes__img" src=static/img/general/06.svg alt="illnes">
+									</div>
+									<h6 class="illnes__title">Гинекология</h6>
+									<p class="desc_s">Гинекология – это отдельная отрасль медицины, которая изучает заболевания женского организма и, прежде всего, женской репродуктивной системы.</p>
+									<div class="read read_small">
+										<a href="#" class="read__link">Подробнее
+											
+					            <svg class="icon-next" width="25" height="25">
+					                <use xlink:href="#icon-right"></use>
+					            </svg>
+					        
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="illnes__item illnes__item_1-3">
+								<div class="illnes__wrap">
+									<div class="illnes__pic">
+										<img class="illnes__img" src=static/img/general/07.svg alt="illnes">
+									</div>
+									<h6 class="illnes__title">Дерматология</h6>
+									<p class="desc_s">Грибковые поражения – группа заболеваний, в основе которых лежит инфицирование, вызываемое болезнетворными грибками.</p>
+									<div class="read read_small">
+										<a href="#" class="read__link">Подробнее
+											
+					            <svg class="icon-next" width="25" height="25">
+					                <use xlink:href="#icon-right"></use>
+					            </svg>
+					        
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="illnes__item illnes__item_1-3">
+								<div class="illnes__wrap">
+									<div class="illnes__pic">
+										<img class="illnes__img" src=static/img/general/08.svg alt="illnes">
+									</div>
+									<h6 class="illnes__title">Иммунология</h6>
+									<p class="desc_s">Псориаз представляет собой хроническое заболевание, характеризующееся специфическими кожными поражениями.</p>
+									<div class="read read_small">
+										<a href="#" class="read__link">Подробнее
+											
+					            <svg class="icon-next" width="25" height="25">
+					                <use xlink:href="#icon-right"></use>
+					            </svg>
+					        
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="illnes__item illnes__item_1-3">
+								<div class="illnes__wrap">
+									<div class="illnes__pic">
+										<img class="illnes__img" src=static/img/general/09.svg alt="illnes">
+									</div>
+									<h6 class="illnes__title">Нефрология</h6>
+									<p class="desc_s">Нефрогенная анемия (анемия почечного происхождения, ренальная анемия) – это снижение числа эритроцитов и уровня гемоглобина крови при заболевании почек.</p>
+									<div class="read read_small">
+										<a href="#" class="read__link">Подробнее
+											
+					            <svg class="icon-next" width="25" height="25">
+					                <use xlink:href="#icon-right"></use>
+					            </svg>
+					        
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="illnes__item illnes__item_1-3">
+								<div class="illnes__wrap">
+									<div class="illnes__pic">
+										<img class="illnes__img" src=static/img/general/10.svg alt="illnes">
+									</div>
+									<h6 class="illnes__title">Онкология</h6>
+									<p class="desc_s">Онкологические заболевания не являются самыми опасными, а на ранних стадиях диагностики полностью излечимы. </p>
+									<div class="read read_small">
+										<a href="#" class="read__link">Подробнее
+											
+					            <svg class="icon-next" width="25" height="25">
+					                <use xlink:href="#icon-right"></use>
+					            </svg>
+					        
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="illnes__item illnes__item_1-3">
+								<div class="illnes__wrap">
+									<div class="illnes__pic">
+										<img class="illnes__img" src=static/img/general/11.svg alt="illnes">
+									</div>
+									<h6 class="illnes__title">Психиатрия</h6>
+									<p class="desc_s">На сегодняшний день, по данным ВОЗ, психическими заболеваниями страдают более 450 миллионов людей на планете. </p>
+									<div class="read read_small">
+										<a href="#" class="read__link">Подробнее
+											
+					            <svg class="icon-next" width="25" height="25">
+					                <use xlink:href="#icon-right"></use>
+					            </svg>
+					        
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="illnes__item illnes__item_1-3">
+								<div class="illnes__wrap">
+									<div class="illnes__pic">
+										<img class="illnes__img" src=static/img/general/12.svg alt="illnes">
+									</div>
+									<h6 class="illnes__title">Неврология</h6>
+									<p class="desc_s">На сегодняшний день, по данным ВОЗ, психическими заболеваниями страдают более 450 миллионов людей на планете.</p>
+									<div class="read read_small">
+										<a href="#" class="read__link">Подробнее
+											
+					            <svg class="icon-next" width="25" height="25">
+					                <use xlink:href="#icon-right"></use>
+					            </svg>
+					        
+										</a>
+									</div>
+								</div>
+							</div>
+					</div>				</div>
+
+				<div class="wrap box_20"  tabindex="0">
+					<h4 class="title__lm title_line is-regular">
+						<span class="title_line_wrap"> Лекарственные средства</span>
+					</h4>
+					<div class="wrap wrap_760">
+						<p class="desc_xl">Janssen вносит значительный вклад в систему здравоохранения России, повышая доступность современных лекарственных препаратов для пациентов, реализует многочисленные социальные инициативы в области охраны здоровья.</p>
+					</div>
+				</div>
+
+				
+				<section class="slider">
+				    <div class="slider__container">
+				        <div class="slider__item"  tabindex="0">
+				            <div class="slider__pic">
+				                <img class="slider__img" src="static/img/general/slide-01.jpg" alt='picture' >
+				            </div>
+				            <div class="slider__text">
+				                <div class="slider__br">
+				                    <h4 class="slider__title">социальная ответственность</h4>
+				                </div>
+				                <p class="slider__desc">6 способов от Джонсон и Джонсон, которые помогут сохранить безопасность детей</p>
+				                <div class="slider__read">
+				                    <a href="#" class="slider__link">ЧИТАТЬ
+				                        
+				            <svg class="icon-next" width="25" height="25">
+				                <use xlink:href="#icon-right"></use>
+				            </svg>
+				        
+				                    </a>
+				
+				                </div>
+				            </div>
+				        </div>
+				        <div class="slider__item"  tabindex="0">
+				            <div class="slider__pic">
+				                <img class="slider__img" src="static/img/general/slide-01.jpg" alt='picture' >
+				            </div>
+				            <div class="slider__text">
+				                <div class="slider__br">
+				                    <h4 class="slider__title">социальная ответственность</h4>
+				                </div>
+				                <p class="slider__desc">6 способов от Джонсон и Джонсон, которые помогут сохранить безопасность детей</p>
+				                <div class="slider__read">
+				                    <a href="#" class="slider__link">ЧИТАТЬ
+				                        
+				            <svg class="icon-next" width="25" height="25">
+				                <use xlink:href="#icon-right"></use>
+				            </svg>
+				        
+				                    </a>
+				
+				                </div>
+				            </div>
+				        </div>
+				        <div class="slider__item"  tabindex="0">
+				            <div class="slider__pic">
+				                <img class="slider__img" src="static/img/general/slide-01.jpg" alt='picture' >
+				            </div>
+				            <div class="slider__text">
+				                <div class="slider__br">
+				                    <h4 class="slider__title">социальная ответственность</h4>
+				                </div>
+				                <p class="slider__desc">6 способов от Джонсон и Джонсон, которые помогут сохранить безопасность детей</p>
+				                <div class="slider__read">
+				                    <a href="#" class="slider__link">ЧИТАТЬ
+				                        
+				            <svg class="icon-next" width="25" height="25">
+				                <use xlink:href="#icon-right"></use>
+				            </svg>
+				        
+				                    </a>
+				
+				                </div>
+				            </div>
+				        </div>
+				        <div class="slider__item"  tabindex="0">
+				            <div class="slider__pic">
+				                <img class="slider__img" src="static/img/general/slide-01.jpg" alt='picture' >
+				            </div>
+				            <div class="slider__text">
+				                <div class="slider__br">
+				                    <h4 class="slider__title">социальная ответственность</h4>
+				                </div>
+				                <p class="slider__desc">6 способов от Джонсон и Джонсон, которые помогут сохранить безопасность детей</p>
+				                <div class="slider__read">
+				                    <a href="#" class="slider__link">ЧИТАТЬ
+				                        
+				            <svg class="icon-next" width="25" height="25">
+				                <use xlink:href="#icon-right"></use>
+				            </svg>
+				        
+				                    </a>
+				
+				                </div>
+				            </div>
+				        </div>
+				        <div class="slider__item"  tabindex="0">
+				            <div class="slider__pic">
+				                <img class="slider__img" src="static/img/general/slide-01.jpg" alt='picture' >
+				            </div>
+				            <div class="slider__text">
+				                <div class="slider__br">
+				                    <h4 class="slider__title">социальная ответственность</h4>
+				                </div>
+				                <p class="slider__desc">6 способов от Джонсон и Джонсон, которые помогут сохранить безопасность детей</p>
+				                <div class="slider__read">
+				                    <a href="#" class="slider__link">ЧИТАТЬ
+				                        
+				            <svg class="icon-next" width="25" height="25">
+				                <use xlink:href="#icon-right"></use>
+				            </svg>
+				        
+				                    </a>
+				
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="slider__btns">
+				        <button class="slid-prev">
+				            
+				            <svg class="icon-left" width="25" height="25">
+				                <use xlink:href="#icon-left"></use>
+				            </svg>
+				        
+				        </button>
+				        <button class="slid-next">
+				            
+				            <svg class="icon-right" width="25" height="25">
+				                <use xlink:href="#icon-right"></use>
+				            </svg>
+				        
+				        </button>
+				    </div>
+				
+				</section>
+				<div class="box_40"  tabindex="0">
+					<h4 class="title__sx title_line is-regular">
+						<span class="title_line_wrap"> Социальная ответственность </span>
+					</h4>
+					<div class="wrap_760">
+						<p class="desc_xl">Забота о безопасности пациентов является приоритетом для Janssen, как на стадии разработки препаратов, так и на этапе, когда препарат уже зарегистрирован и широко используется в медицинской практике.</p>
+						<p class="desc_l">Основной целью фармаконадзора является снижение вероятности возникновения неблагоприятных последствий применения лекарственных средств за счет выявления факторов риска, их развития и разработки на основании полученных данных соответствующих рекомендаций для медицинских работников и для пациентов.</p>
+						<p class="desc_l">Выполняя свои обязанности в области фармаконадзора, компания обращается к врачам и пациентам с просьбой сообщать обо всех случаях нежелательных явлений, наблюдавшихся на фоне применения препаратов нашей компании.</p>
+						<p class="desc_m">Сообщение может быть передано по телефону
+						<a href="tel:74957558357" class="desc__link_red">+7 (495) 755 83 57</a> круглосуточно. Также Вы можете воспользоваться бесплатным номером для России
+						<a href="tel:88007008810" class="desc__link_red">8-800-700-88-10</a>.</p>
+					</div>
+				</div>
+
+				<div class="box_80">
+					<div class="wrap infoblock mob-center"  tabindex="0">
+						<div class="infoblock__pic" >
+							<img class="infoblock__img" src="static/img/general/information.svg" alt="infoblock img">
+						</div>
+						<div class="infoblock__text  mob-center">
+							<p class="desc_xl">Для получения более полной информации  о компании посетите глобальный веб-сайт: <a href="http://www.janssen.com" class="infoblock__link">www.janssen.com</a></p>
+						</div>
+					</div>
+
+					<div class="wrap infoblock">
+						<div class="infoblock__pic hide_780">
+							<img class="infoblock__img" src="static/img/general/www.svg" alt="infoblock img">
+						</div>
+						<div class="infoblock__text">
+							<p class="desc_xl">Другие сайты компании Janssen в России:</p>
+							<p class="desc_xl"><a href="http://www.schizophrenia24x7.ru" class="infoblock__link">www.schizophrenia24x7.ru</a></p>
+							<p class="desc_xl"><a href="http://www.mycompanion.org/ru" class="infoblock__link">www.mycompanion.org/ru</a></p>
+							<p class="desc_xl"><a href="http://www.janssenpro.ru" class="infoblock__link">www.janssenpro.ru</a></p>
+
+						</div>
+					</div>
+
+					<div class="wrap infoblock">
+						<div class="infoblock__text">
+							<p class="desc_xl">Ознакомьтесь также с отчетом по поддержке общественных организаций: </p>
+							<p class="desc_xl"><a href="#" class="desc__link_red">2013 год (Россия)</a></p>
+							<p class="desc_xl"><a href="#" class="desc__link_red">2014 год (Россия)</a></p>
+							<p class="desc_xl"><a href="#" class="desc__link_red">2015 год (Россия)</a></p>
+							<p class="desc_xl"><a href="#" class="desc__link_red">2015 год (Украина, поддержка пациентских организаций)</a></p>
+							<p class="desc_xl"><a href="#" class="desc__link_red">2015 год (Украина, благотворительные пожертвования)</a></p>
+							<p class="desc_xl"><a href="#" class="desc__link_red">2016 год (Россия, поддержка пациентских организаций)</a></p>
+							<p class="desc_xl"><a href="#" class="desc__link_red">2016 год (Россия, благотворительные пожертвования)</a></p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<footer class="page-footer">
+			<div class="prefooter">
+				<div class="layout-big layout_flex">
+					<div class="prefooter__text">
+							<a href="/" class="prefooter__link"  tabindex="0">Условия использования</p>
+							<a href="/" class="prefooter__link"  tabindex="0">Политика Конфиденциальности</p>
+							<a href="/" class="prefooter__link"  tabindex="0">Поставки продукции</p>
+							<a href="/" class="prefooter__link"  tabindex="0">Для дистрибьюторов компании</p>
+					</div>
+					<div class="prefooter__spy">
+						<h5 class="prefooter__title">Следите за нами:</h5>
+						<div class="soc">
+								<a href="#" class="soc__link"  tabindex="0">
+									<img src='static/img/general/icon-01.jpg' alt="soc-icon">
+								</a>
+								<a href="#" class="soc__link"  tabindex="0">
+									<img src='static/img/general/icon-02.jpg' alt="soc-icon">
+								</a>
+								<a href="#" class="soc__link"  tabindex="0">
+									<img src='static/img/general/icon-03.jpg' alt="soc-icon">
+								</a>
+								<a href="#" class="soc__link"  tabindex="0">
+									<img src='static/img/general/icon-04.jpg' alt="soc-icon">
+								</a>
+								<a href="#" class="soc__link"  tabindex="0">
+									<img src='static/img/general/icon-05.jpg' alt="soc-icon">
+								</a>
+								<a href="#" class="soc__link"  tabindex="0">
+									<img src='static/img/general/icon-06.jpg' alt="soc-icon">
+								</a>
+						</div>
+					</div>
+				</div>
+			</div>			<footer class="footer">
+				<div class="layout-big layout_flex ">
+					<a class="logo"  tabindex="0">
+						<img src="static/img/general/logo.png" alt="">
+					</a>
+					<div class="footer__text">
+							<p class="footer__desc">© ООО «Джонсон &amp; Джонсон», Россия, 2017 г.</p>
+							<p class="footer__desc">Этот сайт принадлежит компании ООО «Джонсон &amp; Джонсон», которая полностью отвечает за его содержимое.</p>
+							<p class="footer__desc">Сайт ориентирован на физических и юридических лиц из России.</p>
+							<p class="footer__desc">Последнее обновление: 26 сентября 2017 г.</p>
+					</div>
+				</div>
+			</footer>		</footer>
+		<div class="go-top js-top" style="display: none"></div>
+
+		<script src="static/js/main.js"></script>
+	</body>
+
+</html>

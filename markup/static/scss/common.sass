@@ -35,7 +35,6 @@ body
 	+r(520)
 		min-height: calc(100% - 370px)
 
-
 * html .page__wrapper
 	height: 100%
 
@@ -82,6 +81,7 @@ body
 		font-size: 18px
 		color: #fefefe
 		padding-right: 56px
+		+am
 		+r(500)
 			font-size: 12px
 			padding-right: 46px
@@ -165,6 +165,11 @@ a
 	cursor: pointer
 p
 	margin: 0
+hr
+	color: #C1C1C1
+	background-color: #C1C1C1
+	border-color: #C1C1C1
+	opacity: .2
 
 [tabindex="0"]
 	outline: none
@@ -182,6 +187,16 @@ p
 		width: 96%
 		max-width: 760px
 		margin: 0 auto
+		.title
+			&_line
+				position: relative
+				left: 50%
+	&_790
+		width: 96%
+		max-width: 790px
+		margin: 0 auto
+		+r(780)
+			width: 100%
 		.title
 			&_line
 				position: relative
@@ -320,6 +335,15 @@ p
 		margin-bottom: 5px
 		color: $base
 		+pb
+	&__tt
+		font-size: 18px
+		line-height: 1.66
+		text-transform: uppercase
+		color: $base
+		+ar
+		+r(780)
+			font-size: 14px
+			line-height: 1.28
 	&_small_line,
 	&_line
 		position: relative
@@ -442,6 +466,12 @@ p
 		+tr(.4s)
 		&:hover
 			color: $red
+		&_red
+			color: $red
+			font-size: inherit
+			+tr(.4s)
+			&:hover
+				text-decoration: underline
 
 /*- box -*/
 .box
@@ -459,6 +489,13 @@ p
 			margin-bottom: 40px
 	&_40
 		margin-bottom: 40px
+		+r(780)
+			margin-bottom: 20px
+	&_20
+		margin-bottom: 20px
+	&_first
+		+r(1025)
+			margin-top: 70px
 
 .btn
 	padding: 0
@@ -468,6 +505,8 @@ p
 	+tr(.4s)
 	&-more
 		display: inline-block
+		width: 230px
+		max-width: 100%
 		padding: 13px 20px
 		font-size: 18px
 		max-width: 100%
@@ -478,7 +517,25 @@ p
 		&:hover
 			box-shadow: inset 0 0 4px 1px #fff
 			opacity: .8
-
+	&-send
+		display: inline-block
+		vertical-align: top
+		color: #fff
+		background-color: $red
+		font-size: 14px
+		text-transform: uppercase
+		letter-spacing: .1em
+		+ar
+		outline: none
+		border: none
+		border-radius: 16px
+		line-height: 40px
+		height: 40px
+		width: auto
+		min-width: 168px
+		+tr(.4s)
+		&:hover
+			background-color: #a61502
 .mt-70
 	margin-top: 70px
 .mt-30
@@ -487,6 +544,9 @@ p
 
 .hide_mob
 	+r(1025)
+		display: none !important
+.hide_780
+	+r(780)
 		display: none !important
 
 .is-center
@@ -517,3 +577,10 @@ p
 			background: #fff url('../img/content/icon-arrow-down.png') 0 0 no-repeat
 			width: 14px
 			height: 9px
+
+
+.mod-center
+	+r(780)
+		text-align: center
+
+

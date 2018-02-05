@@ -1,0 +1,153 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+	<head>
+		{{> head/head head.defaults}}
+	</head>
+
+	<body class="page is-animated" data-role="page">
+		%=symbols=%
+
+		<div class="page__wrapper" >
+			{{> header/header}}
+
+			<div class="layout-big is-animated box_first ">
+				<div class="wrap  box_40"  tabindex="0">
+					<h4 class="title__lm title_line is-regular">
+						<span class="title_line_wrap"> В помощь пациентам</span>
+					</h4>
+
+					<div class="illnes illnes_help">
+						<div class="illnes__item illnes__item_1-3">
+							<div class="illnes__wrap">
+								<h6 class="illnes__title">Какие заболевания <br> мы лечим</h6>
+								<div class="read read_small">
+									<a href="#" class="read__link">Подробнее
+										{{Icon iconName='icon-right' className='icon-next' iconWidth='25' iconHeight='25'}}
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="illnes__item illnes__item_2-3">
+							<div class="illnes__item illnes__item_1-2 no-shadow no-offset" >
+								<img class="illnes__photo" src="static/img/content/photo-10.jpg" alt="photo">
+							</div>
+							<div class="illnes__item illnes__item_1-2  no-shadow no-offset" >
+								<div class="illnes__wrap">
+									<h6 class="illnes__title">Как получить квоту <br> и какие права вы имеете</h6>
+									<div class="read read_small">
+										<a href="#" class="read__link">Подробнее
+											{{Icon iconName='icon-right' className='icon-next' iconWidth='25' iconHeight='25'}}
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="illnes__item illnes__item_1-3 illnes__item_column  ">
+							<div class="illnes__item  no-shadow no-offset" >
+								<img class="illnes__photo" src="static/img/content/photo-10.jpg" alt="photo">
+							</div>
+							<div class="illnes__item no-shadow no-offset" >
+								<div class="illnes__wrap">
+									<h6 class="illnes__title">Как подготовиться к операции <br> и реабилитация</h6>
+									<div class="read read_small">
+										<a href="#" class="read__link">Подробнее
+											{{Icon iconName='icon-right' className='icon-next' iconWidth='25' iconHeight='25'}}
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="illnes__item illnes__item_2-3 mod_reverse">
+							<div class="illnes__item illnes__item_1-2 no-shadow no-offset " >
+								<div class="illnes__wrap">
+									<h6 class="illnes__title">Что такое доказательная медицина</h6>
+									<p class="desc_s">Доказательная медицина — это новая концепция медицины, которая основана на том, что принятие конкретных решений в отношении лечения больного должно базироваться на четких доказательствах эффективности и безопасности существующих методов лечения, полученных в ходе клинических исследований.</p>
+									<div class="read read_small">
+										<a href="#" class="read__link">Подробнее
+											{{Icon iconName='icon-right' className='icon-next' iconWidth='25' iconHeight='25'}}
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="illnes__item illnes__item_1-2  no-shadow no-offset" >
+								<div class="illnes__wrap">
+									<h6 class="title__tt is-center">Пока вы читаете эту статью, наша продукция помогла</h6>
+
+									<div class="counter">
+										<div class="counter__wrap">
+											<p class="counter__desc">
+												<span>1</span>
+												<span>0</span>
+												<span>0</span>
+												<span>0</span>
+												<span>0</span>
+												<span>0</span>
+												<span>0</span>
+												<span>1</span>
+											</p>
+										</div>
+										<div class="counter__help">
+											<img src="static/img/general/pazient.svg" alt="patient icon" class="counter__pic">
+											<h6 class="title__tt is-center">пацииентам</h6>
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="box_40">
+					<div class="question ">
+						<h4 class="title__l is-center">Задать вопрос врачу</h4>
+						<form action="/" method="post" class="question__form">
+							<fieldset class="question__fieldset ">
+
+							  <select  class="selectric">
+							    <option  value="type">Тип вопроса</option>
+							    <option value="Общий">Общий</option>
+							    <option value="privat">Приватный</option>
+							  </select>
+
+							</fieldset>
+							<textarea class="question__textarea" placeholder="Текст вопроса"></textarea>
+							<fieldset class="question__fieldset">
+								<input class="question__inp" type="email" name="email" placeholder="E-mail">
+							</fieldset>
+							<div class="is-center">
+								<button class="btn-send">отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="wrap wrap_790 box_40"  tabindex="0">
+					<h4 class="title__sx is-center">Основные вопросы</h4>
+					{{> accordion/accordion accordion.top}}
+				</div>
+
+				<div class="wrap wrap_790 box_130"  tabindex="0">
+					<h4 class="title__sx is-center">Студенческие вопросы</h4>
+					{{> accordion/accordion accordion.large}}
+				</div>
+
+
+			</div>
+
+		</div>
+		<footer class="page-footer">
+			{{> prefooter/prefooter}}
+			{{> footer/footer}}
+		</footer>
+		<div class="go-top js-top" style="display: none"></div>
+
+		<script src="static/js/main%=hash=%%=min=%.js"></script>
+	</body>
+
+</html>

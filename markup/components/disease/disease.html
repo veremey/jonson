@@ -15,9 +15,9 @@
 <div class="pill wrap_940 is-center"  tabindex="0">
 
 	{{#each disease.pill}}
-		<div class="pill__box pill__box_{{box.tab}}">
+		<div class="pill__box ">
 			{{#each box}}
-				<ul class="pill__list pill__list_{{tab}}">
+				<ul class="pill__list pill__list_{{tab}} {{#if mod}}{{mod}}{{/if}}">
 					{{#each item}}
 						<li class="pill__item js-tab {{#if mod}}{{mod}}{{/if}}" data-tab={{title}}>
 							<a href="/" class="pill__link">{{name}}</a>
@@ -32,6 +32,6 @@
 
 <div class="medicine  is-center box_40"  tabindex="0">
 	{{#each disease.medicine}}
-		<div class="medicine__item medicine__item_{{tab}}">{{{text}}}</div>
+		<div class="medicine__item medicine__item_{{tab}} {{#if mod}}{{mod}}{{/if}}">{{{text}}}</div>
 	{{/each}}
 </div>

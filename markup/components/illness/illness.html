@@ -1,0 +1,19 @@
+
+<div class="illnes ">
+	{{#each illness.item}}
+		<div class="illnes__item illnes__item_1-3">
+			<div class="illnes__wrap">
+				<div class="illnes__pic">
+					<img class="illnes__img" src={{img}} alt="illnes">
+				</div>
+				<h6 class="illnes__title">{{title}}</h6>
+				<p class="desc_s">{{text}}</p>
+				<div class="read read_small">
+					<a href="#" class="read__link">Подробнее
+						{{Icon iconName='icon-right' className='icon-next' iconWidth='25' iconHeight='25'}}
+					</a>
+				</div>
+			</div>
+		</div>
+	{{/each}}
+</div>

@@ -1,5 +1,14 @@
 
 $(document).ready(function() {
+
+  /* -  select  -*/
+  $('.selectric').selectric({
+    optionsItemBuilder: function(itemData, element, index) {
+      return element.val().length ? '<span class="ico ico-' + element.val() +  '"></span>' + itemData.text : itemData.text;
+    }
+  });
+
+
   /*-  js-more -*/
   $('.js-more').on('click touchstart', function (e) {
     e.preventDefault();

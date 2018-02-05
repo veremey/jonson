@@ -11,8 +11,8 @@ __iconsData: {
         },
     
         'icon-lupa': {
-            width: '512px',
-            height: '512px'
+            width: '307.68px',
+            height: '409.53px'
         },
     
         'icon-menu': {
