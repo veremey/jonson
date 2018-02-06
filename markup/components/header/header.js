@@ -40,10 +40,10 @@ $(document).ready (function () {
 
 		if(!$('.header').is('.is-active')){
 			$('.layout-big, .startscreen').removeClass('nav-open');
-			$('body').removeClass('no-move');
+			// $('body').removeClass('no-move');
 		}else {
 			$('.layout-big, .startscreen').addClass('nav-open');
-			$('body').addClass('no-move');
+			// $('body').addClass('no-move');
 
 		}
 	});
