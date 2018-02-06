@@ -1,8 +1,8 @@
 
 <div class="accordion">
 	{{#each item}}
-		<div class="accordion__item js-accordion {{#if mod}}{{mod}}{{/if}}"  data-accord="accordion__item">
-			<button class="accordion__btn"></button>
+		<div class="accordion__item {{#if mod}}{{mod}}{{/if}}" >
+			<button class="accordion__btn js-accordion"  data-accord="accordion__item"></button>
 			<h5 class="accordion__title">{{title}}</h5>
 			<div class="accordion__text">
 				{{{desc}}}

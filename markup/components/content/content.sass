@@ -15,6 +15,8 @@
 		left: 12%
 		color: #fff
 		z-index: 10
+		+r(1025)
+			left: 8%
 		+r(780)
 			position: relative
 			top: 0
@@ -43,6 +45,13 @@
 			margin-bottom: 40px
 			+r(780)
 				margin-bottom: 20px
+	.title__l
+		+r(1025)
+			font-size: 24px
+		+r(780)
+			font-size: 18px
+			margin-bottom: 0
+
 	.read
 		justify-content: flex-start
 
@@ -81,6 +90,8 @@
 			overflow: hidden
 			margin-bottom: 15px
 			flex: 0 0 auto
+		&.is-border
+			border: 1px solid $border
 	&__img
 		width: 100%
 		+r(780)
@@ -88,6 +99,14 @@
 			top: 50%
 			left: 50%
 			transform: translate(-50%, -50%)
+	.title__sx
+		margin-bottom: 5px
+		color: $red
+		+ar
+	.desc__link_red
+		text-decoration: underline
+		&:hover
+			text-decoration: none
 
 .quote
 	display: flex
@@ -294,6 +313,10 @@
 		margin: 0
 		+r(780)
 			margin-bottom: 6px
+	&.mod_justify
+		justify-content: space-between
+	&.mod_single
+		padding: 26px 40px
 
 .question
 	width: 100%
@@ -376,6 +399,10 @@
 			align-items: center
 			margin: 15px 0
 			text-align: left
+		+r(780)
+			justify-content: center
+		+r(500)
+			justify-content: space-around
 		&__wrap
 			display: inline-block
 			margin: 0 auto 15px
@@ -386,7 +413,7 @@
 				min-width: 230px
 				width: 230px
 			+r(780)
-				margin: 0 6px 0 0
+				margin: 0 16px 0 0
 				min-width: 0
 				width: auto
 			+r(500)
@@ -404,8 +431,9 @@
 				vertical-align
 				+ab
 				+r(780)
-					font-size: 36px
+					font-size: 50px
 				+r(500)
+					font-size: 36px
 					padding: 0 2px
 				&:after
 					content: ''

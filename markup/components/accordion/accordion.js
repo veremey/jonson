@@ -5,11 +5,11 @@ $(document).ready(function() {
   	var $this = $(this);
   	var $way = $(this).data('accord');
 
-  	if($this.is('.is-active')){
-  		$this.removeClass('is-active');
+  	if($this.closest('.'+$way).is('.is-active')){
+  		$this.closest('.'+$way).removeClass('is-active');
   	} else {
 	  	$('.'+ $way).removeClass('is-active');
-	  	$this.addClass('is-active');
+	  	$this.closest('.'+$way).addClass('is-active');
 	  }
   });
 });

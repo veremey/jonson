@@ -1,18 +1,4 @@
 $(document).ready(function () {
-
-	// var doughnut = + 10000001;
-   // window.setInterval(
-   //  function () {
-   //      doughnut =  + doughnut + 1;
-   //      var str = String(doughnut).split('');
-   //      var r = str.join('');
-   //      console.log(r);
-   //      $(".counter__desc").html('');
-   //      for (var i = str.length - 1; i >= 0; i--) {
-   //      	$(".counter__desc").prepend('<span>' + str[i] + '</span>')
-   //      }
-   //  }, 60000);
-
    var peoples = 0,
    tenpeoples = 0,
    hungredpeoples = 0,
@@ -59,10 +45,6 @@ $(document).ready(function () {
    }, 60000000000);
 
 
-	// setInterval(function () {
-	// 	deg = -1;
-	// }, 5999);
-
 	});
 
 
@@ -89,11 +71,11 @@ $(function () {
 					triggerHook: 1,
 					class: 'is-animated'
 				},
-				el4: {
-					selector: '.slider',
-					triggerHook: .9,
-					class: 'is-animated'
-				},
+				// el4: {
+				// 	selector: '.slider',
+				// 	triggerHook: .9,
+				// 	class: 'is-animated'
+				// },
 
 			}
 		});
@@ -102,30 +84,31 @@ $(function () {
 			container: '.layout-big',
 			selfTriggeredElems: {
 				el1: {
-					selector: '.slider',
-					triggerHook: .9,
-					class: 'is-animated'
-				},
-				el2: {
 					selector: '.photo',
 					triggerHook: .9,
 					class: 'is-animated'
 				},
-				el3: {
+				el2: {
 					selector: '.wrap',
 					triggerHook: .9,
 					class: 'is-animated'
 				},
-				el4: {
+				el3: {
 					selector: '.quote',
 					triggerHook: .9,
 					class: 'is-animated'
 				},
-				el5: {
+				el4: {
 					selector: '.illnes__item',
 					triggerHook: .96,
 					class: 'is-animated'
 				},
+
+				// el1: {
+				// 	selector: '.slider',
+				// 	triggerHook: .9,
+				// 	class: 'is-animated'
+				// },
 
 			}
 		});
@@ -159,3 +142,5 @@ function AnimationClass() {
 	}
 
 }
+
+

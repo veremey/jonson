@@ -1,6 +1,8 @@
 
 $(document).ready (function () {
 
+	var logoBigSrc = 'static/img/content/logo-site-big.gif';
+
 	if($(document).width() > (1550-16)){
 		$('.header').addClass('is-active menu');
 		$('.layout-big').addClass('nav-open');
@@ -42,6 +44,7 @@ $(document).ready (function () {
 		}else {
 			$('.layout-big, .startscreen').addClass('nav-open');
 			$('body').addClass('no-move');
+
 		}
 	});
 
@@ -89,12 +92,22 @@ $(document).ready (function () {
 	$(document).on('scroll', function () {
 		var $win =$(window).height();
 		var $doc = $(document).scrollTop();
+		var $footerHeight = $('.page-footer').outerHeight();
+		var $fixBottom = $(document).height() - $win - $footerHeight;
 
 		if($doc > $win/2){
 			$('.go-top').show('400');
 			} else {
 			$('.go-top').hide('400');
 		}
+
+		if($(document).scrollTop() > $fixBottom){
+			$('.go-top').css({
+				'bottom': $doc - $fixBottom + 15
+			});
+		} else {$('.go-top').css({
+			'bottom' : '40px'
+		})}
 	});
 
 });
@@ -106,16 +119,35 @@ function changeHeader(arg) {
 
 	for (var i = classes.length - 1; i >= 0; i--) {
 		if(arg == classes[i]){
-			// $('.header').removeClass('menu search is-active');
 			$('.header').attr('class', 'hdr is-animated ');
-			// console.log('some');
+
+			$('.header__logo_small .header__pic').each(function () {
+				$(this).attr('src', 'static/img/content/transparent.png');
+			});
+			setTimeout(function () {
+				$('.header__logo_small .header__pic').each(function () {
+					$(this).attr('src', 'static/img/content/logo-site-small.gif');
+				});
+			}, 800);
+
 		}
 		 else {
 			$('.header').removeClass('menu search').addClass('is-active  is-animated ' + arg);
+
+			$('.header__logo_big .header__pic').each(function () {
+				$(this).attr('src', 'static/img/content/transparent.png');
+			});
+			setTimeout(function () {
+				$('.header__logo_big .header__pic').each(function () {
+					$(this).attr('src', 'static/img/content/logo-site-big.gif');
+				});
+			}, 800);
+
 		}
 
 	}
 }
+
 
 /*--- close if click not here ------ */
 /*-------------------------------------------*/

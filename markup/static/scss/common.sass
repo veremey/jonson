@@ -41,8 +41,6 @@ body
 .page__buffer
 	height: 50px
 
-
-
 .layout
 	&-big
 		display: block
@@ -126,7 +124,6 @@ body
 	height: 40px
 	cursor: pointer
 	z-index: 20
-	+tr(.4s)
 	&:before,
 	&:after
 		content: ''
@@ -325,6 +322,13 @@ hr
 			&:before,
 			&:after
 				top: .5em
+		.desc__link_red
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+		&.mod_red
+			color: $red
+
 	&__xm
 		font-size: 20px
 		line-height: 1.2
@@ -474,6 +478,14 @@ hr
 			+tr(.4s)
 			&:hover
 				text-decoration: underline
+			&.mod_underline
+				text-decoration: underline
+				&:hover
+					text-decoration: none
+	&.mod_underline
+		text-decoration: underline
+		&:hover
+			text-decoration: none
 
 /*- box -*/
 .box
@@ -495,6 +507,8 @@ hr
 			margin-bottom: 20px
 	&_20
 		margin-bottom: 20px
+	&_0
+		margin-bottom: 0px
 	&_first
 		+r(1025)
 			margin-top: 70px

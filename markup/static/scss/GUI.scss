@@ -1,2 +1,15 @@
 // GUI stylies of the project
 // For example, styles of the links, buttons and so on.
+
+@font-face {
+    font-family: 'akzidenz-grotesk_proBdCn';
+    src: url('../fonts/akzidenzgroteskpro-boldcn-webfont.eot');
+    src: url('../fonts/akzidenzgroteskpro-boldcn-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/akzidenzgroteskpro-boldcn-webfont.woff2') format('woff2'),
+         url('../fonts/akzidenzgroteskpro-boldcn-webfont.woff') format('woff'),
+         url('../fonts/akzidenzgroteskpro-boldcn-webfont.ttf') format('truetype'),
+         url('../fonts/akzidenzgroteskpro-boldcn-webfont.svg#akzidenz-grotesk_proBdCn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

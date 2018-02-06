@@ -9,6 +9,7 @@ var data = {pages: {
 		'help.html',
 		'evidence.html',
 		'news.html',
-		'social.html'
+		'social.html',
+		'equipment.html'
 	]
 }};

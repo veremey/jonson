@@ -415,25 +415,6 @@
 
 'module': {},
 
-'pages': {
-	list: [
-		'main.html',
-		'credo.html',
-		'content.html',
-		'corporte-culture.html',
-		'disease.html',
-		'medical-devices.html',
-		'help.html',
-		'evidence.html',
-		'news.html',
-		'social.html'
-	]
-},
-
-'prefooter': {
-	link: ['Условия использования', 'Политика Конфиденциальности', 'Поставки продукции', 'Для дистрибьюторов компании'],
-	soc: ['icon-01.jpg', 'icon-02.jpg', 'icon-03.jpg', 'icon-04.jpg', 'icon-05.jpg', 'icon-06.jpg']},
-
 'news': {
 	item: [
 		{list: {
@@ -464,6 +445,26 @@
 		}}
 	]
 },
+
+'pages': {
+	list: [
+		'main.html',
+		'credo.html',
+		'content.html',
+		'corporte-culture.html',
+		'disease.html',
+		'medical-devices.html',
+		'help.html',
+		'evidence.html',
+		'news.html',
+		'social.html',
+		'equipment.html'
+	]
+},
+
+'prefooter': {
+	link: ['Условия использования', 'Политика Конфиденциальности', 'Поставки продукции', 'Для дистрибьюторов компании'],
+	soc: ['icon-01.jpg', 'icon-02.jpg', 'icon-03.jpg', 'icon-04.jpg', 'icon-05.jpg', 'icon-06.jpg']},
 
 'startscreen': {},
 
@@ -513,6 +514,9 @@ __pages: [{
              },{
                 name: 'disease',
                 href: 'disease.html'
+             },{
+                name: 'equipment',
+                href: 'equipment.html'
              },{
                 name: 'evidence',
                 href: 'evidence.html'
