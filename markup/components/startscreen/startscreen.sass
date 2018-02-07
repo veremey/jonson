@@ -6,6 +6,7 @@
 	+tr(.4s .2s)
 	+r(780)
 		margin-bottom: 20px
+	&__item,
 	&__slider,
 	&__item,
 	.slick-list,
@@ -16,6 +17,7 @@
 		font-size: 0
 		overflow: hidden
 		z-index: 5
+		+tr(.4s)
 		+r(780)
 			height: auto
 	&__pic
@@ -43,8 +45,9 @@
 		max-width: 760px
 		margin: 0 auto
 		+r(1025)
-			width: 80%
-			max-width: 100%
+			max-width: 80%
+			width: auto
+			+tr(.4s)
 		+r(780)
 			width: 100%
 			padding: 20px 20px 30px
@@ -78,6 +81,17 @@
 	&.nav-open
 		padding-left: 315px
 		+tr(.4s .2s)
+		.startscreen
+			&__item,
+			&__slider,
+			&__item,
+			.slick-list,
+			.slick-slide
+				height: 70vh
+			&__content
+				max-width: 90%
+				width: auto
+				+tr(.4s .2s)
 	.read
 		justify-content: flex-start
 		&__link

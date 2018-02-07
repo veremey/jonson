@@ -678,7 +678,7 @@ body.no-move {
   font-size: 18px;
   color: #fefefe;
   padding-right: 56px;
-  font-family: 'akzidenzgroteskpro-md-webfont', Arial, sans-serif;
+  font-family: 'akzidenzgroteskpro-regular-webfont', Arial, sans-serif;
 }
 
 @media only screen and (max-width: 500px) {
@@ -7293,7 +7293,7 @@ html:not(.webkit-line-clamp) .info__link_cut::after {
   }
 }
 
-.startscreen__slider, .startscreen__item,
+.startscreen__item, .startscreen__slider, .startscreen__item,
 .startscreen .slick-list,
 .startscreen .slick-slide {
   position: relative;
@@ -7302,10 +7302,12 @@ html:not(.webkit-line-clamp) .info__link_cut::after {
   font-size: 0;
   overflow: hidden;
   z-index: 5;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 @media only screen and (max-width: 780px) {
-  .startscreen__slider, .startscreen__item,
+  .startscreen__item, .startscreen__slider, .startscreen__item,
   .startscreen .slick-list,
   .startscreen .slick-slide {
     height: auto;
@@ -7357,8 +7359,10 @@ html:not(.webkit-line-clamp) .info__link_cut::after {
 
 @media only screen and (max-width: 1025px) {
   .startscreen__content {
-    width: 80%;
-    max-width: 100%;
+    max-width: 80%;
+    width: auto;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
   }
 }
 
@@ -7407,6 +7411,19 @@ html:not(.webkit-line-clamp) .info__link_cut::after {
 
 .startscreen.nav-open {
   padding-left: 315px;
+  -webkit-transition: 0.4s 0.2s;
+  transition: 0.4s 0.2s;
+}
+
+.startscreen.nav-open .startscreen__item, .startscreen.nav-open .startscreen__slider, .startscreen.nav-open .startscreen__item,
+.startscreen.nav-open .startscreen .slick-list,
+.startscreen.nav-open .startscreen .slick-slide {
+  height: 70vh;
+}
+
+.startscreen.nav-open .startscreen__content {
+  max-width: 90%;
+  width: auto;
   -webkit-transition: 0.4s 0.2s;
   transition: 0.4s 0.2s;
 }
