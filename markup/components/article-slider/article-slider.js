@@ -20,4 +20,3 @@ $('.slider__container').slick({
 		}]
 });
 
-// alert('yo');

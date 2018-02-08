@@ -2,8 +2,9 @@
 	position: relative
 	width: 100%
 	margin-bottom: 70px
-	overflow: hidden
 	+tr(.4s .2s)
+	+r(1025)
+		margin-top: 50px
 	+r(780)
 		margin-bottom: 20px
 	&__item,
@@ -12,44 +13,46 @@
 	.slick-list,
 	.slick-slide
 		position: relative
-		height: 85vh
-		min-height: 300px
 		font-size: 0
-		overflow: hidden
 		z-index: 5
-		+tr(.4s)
+		+tr(2s)
 		+r(780)
 			height: auto
 	&__pic
-		+coverdiv
+		+tr(2s)
 		+r(780)
 			position: relative
 			top: 0
 			left: 0
 			right: 0
 			bottom: auto
-			height: 320px
 	&__img
-		position: absolute
-		top: 50%
-		left: 50%
-		min-width: 100%
-		min-height: 100%
-		transform: translate3d(-50%, -50%, 0)
-		+r(780)
-			height: 100%
-	&__content
 		position: relative
+		width: 100%
+		transform: translate3d(0, 0%, 0)!important
+	&__content
+		// position: relative
+		position: absolute
+		left: 50%
+		top: 0
 		width: 60%
 		height: 100%
 		max-width: 760px
 		margin: 0 auto
+		transform: translate3d(-50%, 0, 0)
+		+tr(.4s)
 		+r(1025)
+			left: 8%
 			max-width: 80%
 			width: auto
-			+tr(.4s)
+			transform: translate3d(0%, 0, 0)
+			// +tr(.4s)
 		+r(780)
+			position: relative
+			top: 0
+			left: 0
 			width: 100%
+			max-width: 100%
 			padding: 20px 20px 30px
 			height: auto
 			background-color: #F0EFED
@@ -62,6 +65,8 @@
 		+gpu
 		// @media (orientation: landscape)
 		// 	bottom: 80px
+		+r(1025)
+			bottom: 60px
 		+r(780)
 			position: relative
 			top: 0
@@ -71,10 +76,12 @@
 
 	&__title
 		font-size: 60px
-		margin-bottom: 25px
+		margin-bottom: .4em
 		line-height: 1.2
 		color: #fff
 		+pb
+		+r(1025)
+			font-size: 40px
 		+r(780)
 			font-size: 30px
 			color: $base
@@ -82,16 +89,12 @@
 		padding-left: 315px
 		+tr(.4s .2s)
 		.startscreen
-			&__item,
-			&__slider,
-			&__item,
-			.slick-list,
-			.slick-slide
-				height: 70vh
 			&__content
-				max-width: 90%
-				width: auto
 				+tr(.4s .2s)
+				+r(1550)
+					width: 90%
+					max-width: 100%
+					bottom: 60px
 	.read
 		justify-content: flex-start
 		&__link
@@ -109,4 +112,5 @@
 		padding: 2px 0
 		+r(780)
 			bottom: auto
-			top: 290px
+			top: calc(33.68vw - 24px)
+			// top: calc((1906px / 642px) * 100%)

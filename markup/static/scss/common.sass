@@ -51,17 +51,21 @@ body
 		overflow: hidden
 		+tr(.4s .2s)
 		&.nav-open
-			max-width: calc(1146px + 365px)
+			max-width: calc(1146px + 345px)
 			padding-left: 365px
 			+tr(.4s .2s)
+			+r(1320)
+				max-width: calc(1146px + 108px)
 		+r(1550)
 			margin: 0 auto
-
+			max-width: calc(100% - 385px)
 		+r(1320)
 			width: 100%
-			margin: 0
-			padding: 0 20px 0 80px
+			max-width: calc(100% - 345px)
+			padding: 0 20px
 		+r(1025)
+			width: 100%
+			max-width: 100%
 			padding: 0 20px 0
 
 	&_flex
