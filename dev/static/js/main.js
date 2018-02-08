@@ -6037,24 +6037,56 @@ $(document).ready (function () {
 		if(!$('.header').is('.is-active')){
 			$('.layout-big, .startscreen').removeClass('nav-open');
 			// $('body').removeClass('no-move');
-		}else {
+		} else {
 			$('.layout-big, .startscreen').addClass('nav-open');
 			// $('body').addClass('no-move');
 		}
 
-		setTimeout(function () {
+		function reslick() {
 			$('.startscreen__slider').slick('unslick');
 			$('.startscreen__slider').slick({
-		dots: true,
-		autoplay: false,
-		autoplaySpeed: 2000,
-		infinite: true,
-		speed: 300,
-		slidesToShow: 1,
-		adaptiveHeight: true,
-		mobileFirst: true
-	});
-		}, 900);
+				dots: true,
+				autoplay: false,
+				autoplaySpeed: 2000,
+				infinite: true,
+				speed: 300,
+				slidesToShow: 1,
+				adaptiveHeight: true
+			});
+		}
+
+		function changeHeight() {
+			var $height = $('.startscreen').width() * .33;
+			$('.slick-list, .startscreen__img').height($height);
+			console.log($height);
+		}
+
+		var anima = setInterval(changeHeight, 20);
+
+		setTimeout(function () {
+			clearInterval(anima);
+			reslick();
+		}, 600);
+
+			// var stopInterval = setInterval(reslick, 20);
+			// setTimeout(function () {
+			// 	clearInterval(stopInterval);
+			// }, 900);
+
+
+
+		// var tr = requestAnimationFrame(function () {
+
+		// 	var t = setInterval(reslick, 20);
+		// 	setTimeout(function () {
+		// 		clearInterval(t);
+		// 	}, 900);
+
+		// });
+
+
+
+
 
 	});
 
@@ -6073,7 +6105,8 @@ $(document).ready (function () {
 
 		$('.' + closeItem).removeClass('is-active search');
 		$('.js-toggler').removeClass('is-active search');
-		('.has-sub').removeClass('is-active');
+		$('.has-sub').removeClass('is-active');
+		$('.layout-big, .startscreen').removeClass('nav-open');
 
 		return false;
 	});
