@@ -60,8 +60,10 @@ $(document).ready (function () {
 		}
 
 		function changeHeight() {
-			var $height = $('.startscreen').width() * .33;
-			$('.slick-list, .startscreen__img, .startscreen__content').height($height);
+			var $width = $('.startscreen__wrap').width();
+			var $height = $('.startscreen__wrap').width() * .33;
+			$('.startscreen__slider, .slick-list, .startscreen__img, .startscreen__content').height($height);
+			$('.startscreen__item, .startscreen__img').width($width);
 			console.log($height);
 		}
 

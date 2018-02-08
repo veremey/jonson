@@ -2,8 +2,8 @@
 	position: relative
 	width: 100%
 	margin-bottom: 70px
-	// +tr(.4s .2s)
-	+tr(.6s)
+	+tr(.4s .2s)
+	// +tr(.6s)
 	+r(1025)
 		margin-top: 50px
 	+r(780)
@@ -16,11 +16,11 @@
 		position: relative
 		font-size: 0
 		z-index: 5
-		// +tr(2s)
+		+tr(.6s)
 		+r(780)
 			height: auto
 	&__pic
-		// +tr(2s)
+		// +tr(.6s)
 		+r(780)
 			position: relative
 			top: 0
@@ -41,7 +41,8 @@
 		max-width: 760px
 		margin: 0 auto
 		transform: translate3d(-50%, 0, 0)
-		+tr(.4s)
+		// +tr(.4s)
+		+tr(0s .6s)
 		+r(1025)
 			left: 8%
 			max-width: 80%
@@ -83,14 +84,19 @@
 			color: $base
 	&.nav-open
 		padding-left: 315px
-		+tr(.4s .2s)
-		.startscreen
-			&__content
-				+tr(.4s .2s)
-				+r(1550)
-					width: 90%
-					max-width: 100%
-					bottom: 60px
+		transition: all .4s .2s
+		// .startscreen
+		// 	&__slider
+		// 		+tr(.6s)
+			// &__content
+			// 	+tr(0s .6s)
+			// 	+r(1550)
+			// 		width: 90%
+			// 		max-width: 100%
+			// &__text
+			// 	bottom: 40px
+			// 	+tr(0s .6s)
+				// +tr(.6s)
 	.read
 		justify-content: flex-start
 		&__link
