@@ -61,7 +61,7 @@ $(document).ready (function () {
 
 		function changeHeight() {
 			var $height = $('.startscreen').width() * .33;
-			$('.slick-list, .startscreen__img').height($height);
+			$('.slick-list, .startscreen__img, .startscreen__content').height($height);
 			console.log($height);
 		}
 
