@@ -1,4 +1,3 @@
-
 $(document).ready (function () {
 
 	var logoBigSrc = 'static/img/content/logo-site-big.gif';

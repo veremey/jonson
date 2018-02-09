@@ -15,6 +15,9 @@
 		left: 12%
 		color: #fff
 		z-index: 10
+		+r(1200)
+			bottom: 40px
+			width: 87%
 		+r(1025)
 			left: 8%
 		+r(780)
@@ -46,8 +49,10 @@
 			+r(780)
 				margin-bottom: 20px
 	.title__l
-		+r(1025)
+		+r(1280)
 			font-size: 24px
+		// +r(1025)
+		// 	font-size: 24px
 		+r(780)
 			font-size: 18px
 			margin-bottom: 0
@@ -74,13 +79,13 @@
 		flex-direction: column
 	&__text
 		display: inline-block
-		flex: 0 0 60%
+		flex: 0 0 64%
 		+r(780)
 			flex: 0 0 auto
 	&__pic
 		display: inline-block
 		vertical-align: top
-		flex: 0 0 37%
+		flex: 0 0 33%
 		font-size: 0
 		+r(780)
 			position: relative
@@ -92,6 +97,7 @@
 			flex: 0 0 auto
 		&.is-border
 			border: 1px solid $border
+			align-self: flex-start
 	&__img
 		width: 100%
 		+r(780)
@@ -103,6 +109,8 @@
 		margin-bottom: 5px
 		color: $red
 		+ar
+		&.mod_med
+			+am
 	.desc__link_red
 		text-decoration: underline
 		&:hover
@@ -309,6 +317,8 @@
 			text-decoration: underline
 		+r(780)
 			font-size: 14px
+	.desc_l
+		+ar
 	.desc_xl
 		margin: 0
 		+r(780)
@@ -422,6 +432,7 @@
 
 		&__desc
 			font-size: 0
+			white-space: nowrap
 			span
 				font-size: 48px
 				color: $red

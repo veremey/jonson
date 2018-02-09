@@ -819,6 +819,10 @@ p {
   margin: 0;
 }
 
+b {
+  font-weight: bold;
+}
+
 hr {
   color: #C1C1C1;
   background-color: #C1C1C1;
@@ -885,6 +889,12 @@ hr {
   width: 96%;
   max-width: 910px;
   margin: 0 auto;
+}
+
+.wrap_910 .title_line {
+  width: 100%;
+  position: relative;
+  left: 50%;
 }
 
 @media only screen and (max-width: 780px) {
@@ -1129,6 +1139,14 @@ hr {
           transform: translateX(-50%);
 }
 
+@media only screen and (max-width: 1200px) {
+  .title_small_line, .title_line {
+    width: 100%;
+    position: relative;
+    left: 50%;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .title_small_line, .title_line {
     left: 50%;
@@ -1263,6 +1281,10 @@ hr {
   margin-bottom: 1em;
   color: #404040;
   font-family: 'akzidenzgroteskpro-light-webfont', Arial, sans-serif;
+}
+
+.desc_l b {
+  font-family: 'akzidenzgroteskpro-regular-webfont', Arial, sans-serif;
 }
 
 @media only screen and (max-width: 780px) {
@@ -4436,6 +4458,12 @@ body .ui-tooltip {
   font-weight: 700;
 }
 
+@media only screen and (max-width: 1200px) {
+  .slider__desc {
+    font-size: 26px;
+  }
+}
+
 @media only screen and (max-width: 780px) {
   .slider__desc {
     font-size: 16px;
@@ -4606,6 +4634,13 @@ body .ui-tooltip {
   z-index: 10;
 }
 
+@media only screen and (max-width: 1200px) {
+  .photo__text {
+    bottom: 40px;
+    width: 87%;
+  }
+}
+
 @media only screen and (max-width: 1025px) {
   .photo__text {
     left: 8%;
@@ -4666,7 +4701,7 @@ body .ui-tooltip {
   }
 }
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1280px) {
   .photo .title__l {
     font-size: 24px;
   }
@@ -4724,8 +4759,8 @@ body .ui-tooltip {
 .context__text {
   display: inline-block;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 60%;
-          flex: 0 0 60%;
+      -ms-flex: 0 0 64%;
+          flex: 0 0 64%;
 }
 
 @media only screen and (max-width: 780px) {
@@ -4740,8 +4775,8 @@ body .ui-tooltip {
   display: inline-block;
   vertical-align: top;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 37%;
-          flex: 0 0 37%;
+      -ms-flex: 0 0 33%;
+          flex: 0 0 33%;
   font-size: 0;
 }
 
@@ -4761,6 +4796,8 @@ body .ui-tooltip {
 
 .context__pic.is-border {
   border: 1px solid #E8E7E4;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .context__img {
@@ -4781,6 +4818,10 @@ body .ui-tooltip {
   margin-bottom: 5px;
   color: #D51900;
   font-family: 'akzidenzgroteskpro-regular-webfont', Arial, sans-serif;
+}
+
+.context .title__sx.mod_med {
+  font-family: 'akzidenzgroteskpro-md-webfont', Arial, sans-serif;
 }
 
 .context .desc__link_red {
@@ -5109,6 +5150,10 @@ body .ui-tooltip {
   }
 }
 
+.infoblock .desc_l {
+  font-family: 'akzidenzgroteskpro-regular-webfont', Arial, sans-serif;
+}
+
 .infoblock .desc_xl {
   margin: 0;
 }
@@ -5330,6 +5375,7 @@ body .ui-tooltip {
 
 .illnes__wrap .counter__desc {
   font-size: 0;
+  white-space: nowrap;
 }
 
 .illnes__wrap .counter__desc span {
@@ -5900,9 +5946,23 @@ body .ui-tooltip {
           flex-direction: column;
   width: calc(33.33% - 20px);
   margin-left: 20px;
+  margin-bottom: 20px;
   padding: 30px 40px;
   background-color: #FFF;
   box-shadow: 0px 3px 13px 0px rgba(217, 217, 217, 0.75);
+}
+
+@media only screen and (max-width: 1200px) {
+  .flexible__1-3 {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .flexible__1-3 {
+    width: calc(33.33% - 20px);
+    padding: 20px 30px;
+  }
 }
 
 @media only screen and (max-width: 780px) {
@@ -6607,6 +6667,18 @@ body .ui-tooltip {
   width: calc(33.33% - 20px);
 }
 
+@media only screen and (max-width: 1200px) {
+  .illnes__item_1-3 {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .illnes__item_1-3 {
+    width: calc(33.33% - 20px);
+  }
+}
+
 @media only screen and (max-width: 780px) {
   .illnes__item_1-3 {
     width: calc(50% - 20px);
@@ -6704,6 +6776,12 @@ body .ui-tooltip {
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  .illnes_help .illnes__item_1-3 {
+    width: calc(100% - 20px);
+  }
+}
+
 @media only screen and (max-width: 1025px) {
   .illnes_help .illnes__item_1-3 {
     width: calc(50% - 20px);
@@ -6714,6 +6792,12 @@ body .ui-tooltip {
   .illnes_help .illnes__item_1-3 {
     width: 100%;
     margin: 0 0 20px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .illnes_help .illnes__item_2-3 {
+    width: calc(100% - 20px);
   }
 }
 

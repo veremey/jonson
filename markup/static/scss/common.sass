@@ -168,6 +168,8 @@ a
 	cursor: pointer
 p
 	margin: 0
+b
+	font-weight: bold
 hr
 	color: #C1C1C1
 	background-color: #C1C1C1
@@ -214,6 +216,12 @@ hr
 		width: 96%
 		max-width: 910px
 		margin: 0 auto
+		+r(1240)
+		// 	width: 100%
+		.title_line
+			width: 100%
+			position: relative
+			left: 50%
 		+r(780)
 			width: 100%
 	&_940
@@ -364,6 +372,10 @@ hr
 		text-align: center
 		overflow: hidden
 		+trx(-50%)
+		+r(1200)
+			width: 100%
+			position: relative
+			left: 50%
 		+r(900)
 			left: 50%
 			max-width: 100%
@@ -452,6 +464,8 @@ hr
 		margin-bottom: 1em
 		color: $base
 		+al
+		b
+			+ar
 		+r(780)
 			font-size: 14px
 	&_m

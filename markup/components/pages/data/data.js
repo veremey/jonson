@@ -10,6 +10,8 @@ var data = {pages: {
 		'evidence.html',
 		'news.html',
 		'social.html',
-		'equipment.html'
+		'equipment.html',
+		'ortoped.html',
+		'surgery.html'
 	]
 }};

@@ -53,6 +53,10 @@
 				width: 50%
 		&_1-3
 			width: calc(33.33% - 20px)
+			+r(1200)
+				width: calc(50% - 20px)
+			+r(1025)
+				width: calc(33.33% - 20px)
 			+r(780)
 				width: calc(50% - 20px)
 			+r(650)
@@ -102,12 +106,16 @@
 				min-height: 120px
 		.illnes__item
 			&_1-3
+				+r(1200)
+					width: calc(100% - 20px)
 				+r(1025)
 					width: calc(50% - 20px)
 				+r(780)
 					width: 100%
 					margin: 0 0 20px
 			&_2-3
+				+r(1200)
+					width: calc(100% - 20px)
 				+r(1025)
 					width: calc(50% - 20px)
 					flex-direction: column
