@@ -454,6 +454,7 @@
 		'corporte-culture.html',
 		'disease.html',
 		'medical-devices.html',
+		'medical-equipment.html',
 		'help.html',
 		'evidence.html',
 		'news.html',
@@ -589,6 +590,9 @@ __pages: [{
              },{
                 name: 'medical-devices',
                 href: 'medical-devices.html'
+             },{
+                name: 'medical-equipment',
+                href: 'medical-equipment.html'
              },{
                 name: 'news',
                 href: 'news.html'

@@ -6,6 +6,7 @@ var data = {pages: {
 		'corporte-culture.html',
 		'disease.html',
 		'medical-devices.html',
+		'medical-equipment.html',
 		'help.html',
 		'evidence.html',
 		'news.html',
