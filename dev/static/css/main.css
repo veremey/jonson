@@ -5572,6 +5572,7 @@ body .ui-tooltip {
 
 .big-count .counter__desc {
   font-size: 0;
+  white-space: no-wrap;
 }
 
 .big-count .counter__desc span {
@@ -6393,7 +6394,7 @@ body .ui-tooltip {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 110px;
+  min-height: 110px;
   background-color: #333333;
   color: #fff;
   padding: 20px 0;
@@ -8018,10 +8019,18 @@ html:not(.webkit-line-clamp) .info__link_cut::after {
   display: inline-block;
   vertical-align: top;
   margin-left: 7px;
+  font-size: 0;
 }
 
 .soc__link:hover {
   opacity: .8;
+}
+
+.soc-icon {
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 30px;
 }
 
 .startscreen {
