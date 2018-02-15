@@ -36,6 +36,9 @@ $(document).ready(function() {
     position: {
       my: "bottom-20 center",
       at: "top center",
+      adjust: {
+        y: -8
+      },
       viewport: true
     },
     hide: {

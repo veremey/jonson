@@ -29,6 +29,10 @@
 			width: 100%
 			margin: 0 0 20px 0
 			min-height: 250px
+		&.mod_h-290
+			min-height: 290px
+			+r(650)
+				min-height: 180px
 		&.no-shadow
 			box-shadow: none
 		&.no-offset
@@ -77,6 +81,10 @@
 		+r(650)
 			min-height: 260px
 			padding: 10px 15px 34px 15px
+		&.mod_h-290
+			min-height: 290px
+			+r(650)
+				min-height: 180px
 	&__pic
 		margin-bottom: 20px
 	&__img
@@ -110,7 +118,7 @@
 					width: calc(100% - 20px)
 				+r(1025)
 					width: calc(50% - 20px)
-				+r(780)
+				+r(700)
 					width: 100%
 					margin: 0 0 20px
 			&_2-3
@@ -121,15 +129,108 @@
 					flex-direction: column
 					.illnes__item_1-2
 						width: 100%
-				+r(780)
+				+r(700)
 					width: 100%
 					margin: 0 0 20px
 		.title__tt
 			+r(1025)
 				margin-bottom: 0
+	&__logo
+		height: 46px
+		max-width: 100%
+		margin-bottom: 10px
+		img
+			max-width: 100%
+			max-height: 100%
+	&__download
+		display: inline-block
+		margin-top: auto
+		&_link
+			position: relative
+			padding-right: 45px
+			font-size: 16px
+			color: $base
+			+am
+			+tr(.4s)
+			&:after
+				content: ''
+				position: absolute
+				top: 0
+				right: 0
+				display: inline-block
+				vertical-align: top
+				width: 26px
+				height: 26px
+				border-radius: 100%
+				background: $n url('../img/content/download.png') 50% 50% no-repeat
+			&:hover
+				&:after
+					background: $n url('../img/content/download-hover.png') 50% 50% no-repeat
+
 	.read
 		margin-top: auto
 	.desc_s
-		margin-bottom: 20px
+		margin: 12px 0
+	.title__xm
+		margin-bottom: 10px
 
-
+.ppp
+	display: none
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	&.is-active
+		display: block
+	&__content
+		+vcenter
+		width: 94%
+		max-width: 780px
+		background-color: #fff
+		padding: 50px 95px
+		box-shadow: 0px 3px 13px 0px rgba(217, 217, 217, 0.75)
+		+r(700)
+			padding: 20px 30px
+	&__wrap
+		margin-bottom: 50px
+	&__title
+		font-size: 36px
+		color: $red
+		margin-bottom: 1em
+		+pb
+		+r(600)
+			font-size: 20px
+	&__desc
+		font-size: 24px
+		line-height: 1.24
+		color: $base
+		+pr
+		+r(600)
+			font-size: 16px
+	&__footer
+		display: flex
+		align-items: center
+		justify-content: space-around
+		+r(600)
+			flex-wrap: wrap
+	&__btn
+		display: inline-block
+		vertical-align: top
+		width: 230px
+		text-align: center
+		padding: 14px 20px
+		margin: 0
+		border: none
+		border-radius: 46px
+		outline: none
+		background-color: #F7F7F5
+		font-size: 18px
+		color: $base
+		+pb
+		&:hover,
+		&.is-active
+			background-color: #E8E7E4
+		+r(600)
+			width: 100%
+			margin: 10px 0

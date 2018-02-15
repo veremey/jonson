@@ -46,8 +46,8 @@ body
 		display: block
 		width: calc(100% - 40px)
 		margin: 0 auto
-		max-width: 1146px
-		padding: 0 20px
+		max-width: calc(1146px + 50px)
+		padding: 0 20px 0 70px
 		overflow: hidden
 		+tr(.4s .2s)
 		&.nav-open
@@ -64,7 +64,6 @@ body
 		+r(1320)
 			width: 100%
 			max-width: calc(100% - 333px)
-			padding: 0 20px
 		+r(1240)
 			width: 100%
 			max-width: calc(100% - 315px)
@@ -101,7 +100,7 @@ body
 	.icon-next
 		position: absolute
 		// top: -6px
-		top: 50%
+		top: 46%
 		+try(-50%)
 		right: 0
 		width: 16px
@@ -189,28 +188,28 @@ hr
 		width: 96%
 		max-width: 740px
 		margin: 0 auto
-		.title
-			&_line
-				position: relative
-				left: 50%
+		// .title
+		// 	&_line
+		// 		position: relative
+		// 		left: 50%
 	&_760
 		width: 96%
 		max-width: 760px
 		margin: 0 auto
-		.title
-			&_line
-				position: relative
-				left: 50%
+		// .title
+		// 	&_line
+		// 		position: relative
+		// 		left: 50%
 	&_790
 		width: 96%
 		max-width: 790px
 		margin: 0 auto
 		+r(780)
 			width: 100%
-		.title
-			&_line
-				position: relative
-				left: 50%
+		// .title
+		// 	&_line
+		// 		position: relative
+		// 		left: 50%
 	&_836
 		width: 96%
 		max-width: 836px
@@ -222,11 +221,13 @@ hr
 		max-width: 910px
 		margin: 0 auto
 		+r(1240)
-		// 	width: 100%
-		.title_line
 			width: 100%
+		.title_line
+			width: 96%
+			max-width: 800px
 			position: relative
-			left: 50%
+			+r(1280)
+				// left: 50%
 		+r(780)
 			width: 100%
 	&_940
@@ -292,6 +293,8 @@ hr
 			&:before,
 			&:after
 				top: .7em
+		&.is-regular
+			+pr
 	&__ls
 		font-size: 36px
 		line-height: 1.25
@@ -319,12 +322,11 @@ hr
 			font-size: 18px
 			line-height: 1.2
 		&.has-direction
-			+r(780)
-				font-size: 0
-				.title_line_wrap
-					&:before,
-					&:after
-						top: 5px
+			font-size: 0
+			.title_line_wrap
+				&:before,
+				&:after
+					top: 12px
 	&__sx
 		font-size: 24px
 		line-height: 1
@@ -352,6 +354,8 @@ hr
 		margin-bottom: 10px
 		color: #404040
 		+pr
+		&.mod_red
+			color: $red
 	&__m
 		font-size: 18px
 		line-height: 1.3333
@@ -370,19 +374,21 @@ hr
 	&_small_line,
 	&_line
 		position: relative
-		left: 400px
-		width: 800px
+		// left: 400px
+		width: 96%
+		max-width: 800px
 		margin: 0 auto 20px
 		padding: 0 20px 10px
 		text-align: center
 		overflow: hidden
-		+trx(-50%)
+		z-index: 20
+		// +trx(-50%)
 		+r(1200)
-			width: 100%
+			// width: 100%
 			position: relative
-			left: 50%
+			// left: 50%
 		+r(900)
-			left: 50%
+			// left: 50%
 			max-width: 100%
 		&_wrap
 			display: inline-block
@@ -412,11 +418,9 @@ hr
 				border-bottom: none
 
 	&_small_line
-		width: 300px
-		left: 150px
-		background-color: #fff
-		+r(350)
-			left: 50%
+		width: 96%
+		max-width: 300px
+
 
 	&__direction
 		display: inline-block
@@ -524,6 +528,10 @@ hr
 		margin-bottom: 80px
 		+r(780)
 			margin-bottom: 40px
+	&_60
+		margin-bottom: 60px
+		+r(780)
+			margin-bottom: 30px
 	&_40
 		margin-bottom: 40px
 		+r(780)
@@ -581,6 +589,7 @@ hr
 	margin-top: 30px
 
 
+
 .hide_mob
 	+r(1025)
 		display: none !important
@@ -592,6 +601,9 @@ hr
 	text-align: center
 
 .more__mob
+	+r(780)
+		margin-top: -10px
+		margin-bottom: 15px
 	&_box
 		+r(780)
 			display: none
@@ -616,6 +628,15 @@ hr
 			background: #fff url('../img/content/icon-arrow-down.png') 0 0 no-repeat
 			width: 14px
 			height: 9px
+			transform-origin: 50% 50%
+			+rotate(180)
+			+tr(.2s)
+	&.is-active
+		margin-top: 0px
+		margin-bottom: 0px
+		.more__mob_link:after
+			+rotate(0)
+			+tr(.2s)
 
 
 .mod-center

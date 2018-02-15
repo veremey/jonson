@@ -1,6 +1,16 @@
 .slider
 	position: relative
 	margin-bottom: 120px
+	// &:after
+	// 	content: ''
+	// 	position: absolute
+	// 	top: 50%
+	// 	height: 2px
+	// 	left: 0
+	// 	right: 0
+	// 	+try(-1px)
+	// 	background-color: red
+
 	+r(780)
 		width: calc(100% + 40px)
 		margin-left: -20px
@@ -110,7 +120,7 @@
 				opacity: .9
 	.icon-next
 		position: absolute
-		top: 50%
+		top: 46%
 		transform: translate(0, -50%)
 		right: 0
 		width: 16px
@@ -125,12 +135,14 @@
 	.slick-slide
 		opacity: .5
 		transform: translate3d(0, 0, 0) scaleY(.9)
+		+r(780)
+			transform: translate3d(0, 0, 0) scale(1)
 	.slick-current
 		opacity: 1
 		transform: translate3d(0, 0, 0) scale(1)
 	.slick-arrow
 		position: relative
-		top: 290px
+		top: 0px
 		border: none
 		outline: none
 		background-color: $n
@@ -144,7 +156,7 @@
 	position: absolute
 	display: flex
 	justify-content: space-between
-	top: 0%
+	top: 50%
 	left: 11px
 	right: 8px
 	+try(-50%)

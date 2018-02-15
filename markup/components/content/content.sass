@@ -20,7 +20,7 @@
 			width: 87%
 		+r(1025)
 			left: 8%
-		+r(780)
+		+r(650)
 			position: relative
 			top: 0
 			left: 0
@@ -77,6 +77,7 @@
 	+r(780)
 		flex-wrap: wrap
 		flex-direction: column
+		margin-bottom: 20px
 	&__text
 		display: inline-block
 		flex: 0 0 64%
@@ -88,23 +89,24 @@
 		flex: 0 0 33%
 		font-size: 0
 		+r(780)
+			display: block
 			position: relative
 			width: 100%
-			height: 0
-			padding-top: 50%
-			overflow: hidden
+			// height: 0
+			// padding-top: 50%
+			// overflow: hidden
 			margin-bottom: 15px
 			flex: 0 0 auto
+			text-align: center
 		&.is-border
-			border: 1px solid $border
 			align-self: flex-start
+			img
+				border: 1px solid $border
 	&__img
 		width: 100%
 		+r(780)
-			position: absolute
-			top: 50%
-			left: 50%
-			transform: translate(-50%, -50%)
+			max-width: 100%
+			width: auto
 	.title__sx
 		margin-bottom: 5px
 		color: $red
@@ -247,6 +249,17 @@
 	padding: 0
 	background-color: #fff
 	border: none
+	&:before
+		content: ''
+		position: absolute
+		top: 100%
+		left: 50%
+		+trx(-50%)
+		+arr(23, 17, #fff, b)
+		filter: drop-shadow(0 0 6px rgba(0, 0, 0, .4))
+		+r(650)
+			content: none
+
 	.qtip-content
 		padding: 0
 	+r(520)
@@ -286,10 +299,10 @@
 	&__pic
 		display: inline-block
 		vertical-align
-		width: 150px
-		min-width: 150px
+		width: 70px
+		min-width: 70px
 		height: 70px
-		margin-right: 80px
+		margin-right: 60px
 		+r(1320)
 			width: 90px
 			min-width: 90px
@@ -323,10 +336,14 @@
 		margin: 0
 		+r(780)
 			margin-bottom: 6px
+	.btn
+		+r(780)
+			margin-top: 20px
 	&.mod_justify
 		justify-content: space-between
 	&.mod_single
 		padding: 26px 40px
+
 
 .question
 	width: 100%
@@ -424,6 +441,7 @@
 				width: 230px
 			+r(780)
 				margin: 0 16px 0 0
+				padding: 0 4px
 				min-width: 0
 				width: auto
 			+r(500)
@@ -433,6 +451,7 @@
 		&__desc
 			font-size: 0
 			white-space: nowrap
+
 			span
 				font-size: 48px
 				color: $red
@@ -440,9 +459,11 @@
 				position: relative
 				display: inline-block
 				vertical-align
+				&:first-of-type:after
+					right: 2px
 				+ab
 				+r(780)
-					font-size: 50px
+					font-size: 44px
 				+r(500)
 					font-size: 36px
 					padding: 0 2px

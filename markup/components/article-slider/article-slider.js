@@ -1,6 +1,7 @@
 
 $('.slider__container').slick({
 	centerMode: true,
+	centerPadding: '66px',
 	slidesToShow: 1,
 	slidesToScroll: 1,
 	initialSlide: 1,

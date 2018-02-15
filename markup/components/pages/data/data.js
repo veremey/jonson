@@ -12,6 +12,8 @@ var data = {pages: {
 		'social.html',
 		'equipment.html',
 		'ortoped.html',
-		'surgery.html'
+		'surgery.html',
+		'preparation.html',
+		'psychiatry.html'
 	]
 }};

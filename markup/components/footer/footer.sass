@@ -1,8 +1,9 @@
 .footer
+	position: relative
 	background-color: $red
-	display: flex
-	align-items: center
-	justify-content: space-between
+	// display: flex
+	// align-items: center
+	// justify-content: space-between
 	padding: 15px 0 10px
 
 	&__desc
@@ -21,6 +22,59 @@
 			margin: 30px 0 20px
 		&:hover
 			opacity: .8
+		&__footer
+			fill: #fff
+			width: 180px
 	.layout_flex
 		+r(780)
 			flex-direction: column-reverse
+
+	&__cash
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		display: flex
+		align-items: center
+		height: 110px
+		background-color: #333333
+		color: #fff
+		padding: 20px 0
+		display: none
+		&.is-active
+			display: block
+
+.cash
+	&__title
+		font-size: 18px
+		line-height: 30px
+		text-transform: uppercase
+		color: #fefefe
+		+abl
+	&__desc
+		font-size: 18px
+		line-height: 30px
+		color: #fefefe
+		+ar
+	&__link
+		color: #fefefe
+		font-size: 18px
+		line-height: 30px
+		text-decoration: underline
+		+ar
+		&:hover
+			text-decoration: none
+	&__close
+		padding: 0
+		margin: 0
+		border: none
+		outline: none
+		display: inline-block
+		vertical-align: top
+		width: 32px
+		height: 32px
+		background: $n url('../img/content/cash-close.png') 50% 50% no-repeat
+		cursor: pointer
+		+tr(.4s)
+		&:hover
+			opacity: .8

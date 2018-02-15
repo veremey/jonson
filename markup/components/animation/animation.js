@@ -1,24 +1,44 @@
 $(document).ready(function () {
-   var peoples = 0,
-   tenpeoples = 0,
-   hungredpeoples = 0,
-   thouthendpeoples = 0;
+  var peoples = 0,
+  tenpeoples = 0,
+  hungredpeoples = 0,
+  thouthendpeoples = 0;
 
-   window.setInterval(
+  setInterval(
     function () {
     	peoples += (90 / 60);
         $('.peoples').css({'top': -peoples});
-    }, 1000);
+  }, 1000);
 
-   setInterval(function () {
-   	peoples = 0;
-   }, 600000);
+  // var ee = setInterval( timer, 1000);
 
-   window.setInterval(
+
+  setInterval(function () {
+  	peoples = 0;
+  }, 600000);
+
+
+  setInterval(
     function () {
     	tenpeoples +=(90 / 60);
-        $('.tenpeoples').css({'top': -tenpeoples});
-    }, 10000);
+       $('.tenpeoples').css({'top': -tenpeoples});
+      return tenpeoples;
+	  }, 10000);
+
+
+  // experiment
+  // function timer() {
+  // 	console.log('peoples - ' + peoples);
+  // 	if (peoples > 10 ) {
+  // 		tenpeoples = 99;
+  // 	}
+  //   peoples +=(90 / 60);
+  //   $('.peoples').css({'top': -peoples});
+  //   return peoples;
+  // }
+  // experiment
+
+
 
    setInterval(function () {
    	tenpeoples = 0;
