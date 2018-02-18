@@ -1,67 +1,67 @@
 
-@mixin fromTop
-	opacity: 0
-	transform: translateY(-50px)
-	transition: transform .5s .3s, opacity .5s .3s
-	&.is-animated
-		opacity: 1
-		transform: translateY(0)
+// @mixin fromTop
+// 	opacity: 0
+// 	transform: translateY(-50px)
+// 	transition: transform .5s .3s, opacity .5s .3s
+// 	&.is-animated
+// 		opacity: 1
+// 		transform: translateY(0)
 
-@mixin fromBottom
-	opacity: 0
-	transform: translateY(50px)
-	transition: transform .5s .3s, opacity .5s .3s
-	&.is-animated
-		opacity: 1
-		transform: translateY(0)
+// @mixin fromBottom
+// 	opacity: 0
+// 	transform: translateY(50px)
+// 	transition: transform .5s .3s, opacity .5s .3s
+// 	&.is-animated
+// 		opacity: 1
+// 		transform: translateY(0)
 
-@mixin fromRight
-	opacity: 0
-	transform: translateX(50px)
-	transition: transform .5s .3s, opacity .5s .3s
-	&.is-animated
-		opacity: 1
-		transform: translateY(0)
+// @mixin fromRight
+// 	opacity: 0
+// 	transform: translateX(50px)
+// 	transition: transform .5s .3s, opacity .5s .3s
+// 	&.is-animated
+// 		opacity: 1
+// 		transform: translateY(0)
 
-@mixin fromLeft
-	opacity: 0
-	transform: translateX(-50px)
-	transition: transform .5s .3s, opacity .5s .3s
-	&.is-animated
-		opacity: 1
-		transform: translateY(0)
+// @mixin fromLeft
+// 	opacity: 0
+// 	transform: translateX(-50px)
+// 	transition: transform .5s .3s, opacity .5s .3s
+// 	&.is-animated
+// 		opacity: 1
+// 		transform: translateY(0)
 
-@mixin scale
-	opacity: 0
-	transform: scale(0)
-	transition: transform .5s .3s, opacity .5s .3s
-	&.is-animated
-		opacity: 1
-		transform: scale(1)
-
-
-.startscreen
-	@include fromTop
-
-// .slider,
-.info,
-.photo,
-.wrap
-	@include fromBottom
+// @mixin scale
+// 	opacity: 0
+// 	transform: scale(0)
+// 	transition: transform .5s .3s, opacity .5s .3s
+// 	&.is-animated
+// 		opacity: 1
+// 		transform: scale(1)
 
 
-.header
-	@include fromLeft
+// .startscreen
+// 	@include fromTop
 
-.quote
-	@include fromRight
+// // .slider,
+// .info,
+// .photo,
+// .wrap
+// 	@include fromBottom
 
-.illnes__item
-	@include scale
 
-// $itm: road__item !default
+// .header
+// 	@include fromLeft
 
-// @for $i from 1 through 9
-// 	.#{$itm}-#{$i}
-// 		transition: transform .5s + (1/1+$i) .5s+0.$i, opacity .5s + $i .5s+$i
+// .quote
+// 	@include fromRight
+
+// .illnes__item
+// 	@include scale
+
+// // $itm: road__item !default
+
+// // @for $i from 1 through 9
+
+// // 		transition: transform .5s + (1/1+$i) .5s+0.$i, opacity .5s + $i .5s+$i
 

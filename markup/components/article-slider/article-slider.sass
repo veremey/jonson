@@ -134,12 +134,20 @@
 			padding: 4px
 	.slick-slide
 		opacity: .5
-		transform: translate3d(0, 0, 0) scaleY(.9)
-		+r(780)
+		transform: translate3d(50%, 0, 0) scaleY(.9)
+		transition: opacity .2s
+		+r(1025)
 			transform: translate3d(0, 0, 0) scale(1)
 	.slick-current
 		opacity: 1
 		transform: translate3d(0, 0, 0) scale(1)
+		z-index: 10
+		transition: opacity .2s .3s
+		+ .slick-slide
+			transform: translate3d(-50%, 0, 0) scaleY(.9)
+			transition: opacity .2s
+			+r(1025)
+				transform: translate3d(0, 0, 0) scale(1)
 	.slick-arrow
 		position: relative
 		top: 0px

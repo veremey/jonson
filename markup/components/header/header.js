@@ -12,7 +12,7 @@ $(document).ready (function () {
 			$('.swiper-slide').each(function () {
 				$(this).css({'height': $height});
 			});
-			console.log($height);
+			// console.log($height);
 		}
 
 		var anima = setInterval(changeHeight, 20);
@@ -25,11 +25,11 @@ $(document).ready (function () {
 	}
 
 	$(window).on('resize', function () {
-		if($(document).width() > (1024-16)){
+		// if($(document).width() > (1024-16)){
 			$('.header').removeClass('is-active menu');
 			$('.layout-big, .startscreen').removeClass('nav-open');
 
-		} /*else {
+		/*} else {
 			$('.header').addClass('is-active menu');
 			$('.layout-big, .startscreen').addClass('nav-open');
 		}*/
@@ -68,21 +68,6 @@ $(document).ready (function () {
 				$(this).css({'height': ''});
 			});
 		});
-
-		// var stopInterval = setInterval(reslick, 20);
-		// setTimeout(function () {
-		// 	clearInterval(stopInterval);
-		// }, 900);
-
-
-		// var tr = requestAnimationFrame(function () {
-
-		// 	var t = setInterval(reslick, 20);
-		// 	setTimeout(function () {
-		// 		clearInterval(t);
-		// 	}, 900);
-
-		// });
 
 
 	});
@@ -125,6 +110,27 @@ $(document).ready (function () {
 	  var body = $("html, body");
 	  body.stop().animate({scrollTop:0}, 500, 'swing');
 	});
+
+
+	/*-------- sublist desktop hover--------------*/
+	$('.has-sub').on('mouseenter', function () {
+		if($(document).width() > 1025){
+			$(this).addClass('is-active');
+		}
+	});
+
+	$('.has-sub').on('click, touchstart', function () {
+		if($(document).width() < 1025){
+			$(this).toggleClass('is-active');
+		}
+	});
+
+	/*-------- ----------*/
+	$('.header').on('mouseleave', function () {
+		$('.has-sub').removeClass('is-active');
+	});
+	/*-------- ----------*/
+
 
 	$(document).on('scroll', function () {
 		var $win =$(window).height();

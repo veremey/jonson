@@ -209,8 +209,12 @@
 		text-transform: uppercase
 		+ar
 		font-weight: normal
-		+ .sublist
-			max-height: none
+		// .is-active
+		// 	.sublist
+		// 		max-height: 1000px
+		// 		transition: .2s .8s
+		// + .sublist
+		// 	max-height: none
 	&__item
 		position: relative
 		list-style: none
@@ -233,10 +237,10 @@
 			border-bottom: none
 			.sublist
 				padding: 6px 0 6px 34px
-				max-height: none
+				max-height: 10000px
 				border-top: 1px solid #E3E2E0
 	&__link
-		display: block
+		display: inline-block
 		padding: 5px 0 3px
 		color: $base
 		font-size: 12px
@@ -246,13 +250,43 @@
 			color: $red
 		+r(1025)
 			font-size: 16px
+			margin-right: 40px
+	.has-sub
+		position: relative
+
+.sub
+	&-name
+		position: relative
+	&-link
+		color: inherit
+		+tr(.4s)
+		&:hover
+			color: $red
+	&-icon
+		display: none
+		position: absolute
+		top: 50%
+		right: 0
+		width: 20px
+		height: 10px
+		// display: inline-block
+		vertical-align: top
+		background-color: $n
+		+try(-50%)
+		cursor: pointer
+		+r(1025)
+			display: inline-block
+		svg
+			max-height: 100%
 
 .sublist
 	max-height: 0
 	overflow: hidden
 	padding: 0 0 0px 34px
 	list-style: none
-
+	transition: .2s .2s
+	&.is-active
+		max-height: 1000px
 	&__item
 		margin-bottom: 2px
 	&__link
@@ -266,6 +300,7 @@
 			color: $red
 		+r(1025)
 			font-size: 14px
+
 
 #search
 	width: 100%
