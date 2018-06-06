@@ -15,6 +15,11 @@ var data = {pages: {
 		'ortoped.html',
 		'surgery.html',
 		'preparation.html',
-		'psychiatry.html'
+		'psychiatry.html',
+		'consumer_goods.html',
+		'delivery.html',
+		'terms.html',
+		'confidentiality.html',
+		'about.html'
 	]
 }};

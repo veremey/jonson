@@ -195,6 +195,12 @@ hr
 [tabindex="0"]
 	outline: none
 
+.mt-70
+	margin-top: 70px
+.mt-30
+	margin-top: 30px
+
+
 .wrap
 	&_740
 		width: 96%
@@ -359,6 +365,26 @@ hr
 				text-decoration: none
 		&.mod_red
 			color: $red
+	&__sc
+		font-size: 24px
+		line-height: 1
+		margin-bottom: 0.2em
+		color: #404040
+		+am
+		+r(780)
+			font-size: 16px
+			line-height: 1.24
+			+am
+		.title_line_wrap
+			&:before,
+			&:after
+				top: .5em
+		.desc__link_red
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+		&.mod_red
+			color: $red
 
 	&__xm
 		font-size: 20px
@@ -374,12 +400,28 @@ hr
 		margin-bottom: 5px
 		color: $base
 		+pb
+	&__md
+		font-size: 18px
+		line-height: 1.3333
+		margin-bottom: 10px
+		text-transform: uppercase
+		color: $red
+		+ar
 	&__tt
 		font-size: 18px
 		line-height: 1.66
 		text-transform: uppercase
 		color: $base
 		+ar
+		+r(780)
+			font-size: 14px
+			line-height: 1.28
+	&__tb
+		font-size: 18px
+		line-height: 1.66
+		margin-bottom: 10px
+		color: $base
+		+am
 		+r(780)
 			font-size: 14px
 			line-height: 1.28
@@ -433,7 +475,6 @@ hr
 		width: 96%
 		max-width: 300px
 
-
 	&__direction
 		display: inline-block
 		font-size: 18px
@@ -460,6 +501,8 @@ hr
 				font-size: 12px
 				line-height: 1.1
 				margin: 0
+	&.mod_red
+		color: $red
 
 /*- desc -*/
 .desc
@@ -487,6 +530,16 @@ hr
 		+al
 		b
 			+ar
+		+r(780)
+			font-size: 14px
+	&_lm
+		font-size: 18px
+		line-height: 1.3333
+		margin-bottom: 1em
+		color: $base
+		+am
+		b
+			+ab
 		+r(780)
 			font-size: 14px
 	&_m
@@ -526,6 +579,9 @@ hr
 		&:hover
 			text-decoration: none
 
+.mod_red
+	color: $red
+
 /*- box -*/
 .box
 	&_130
@@ -555,6 +611,21 @@ hr
 	&_first
 		+r(1025)
 			margin-top: 70px
+	&_pt-40
+		padding-top: 40px
+		+r(780)
+			padding-top: 20px
+	&_pb-40
+		padding-bottom: 40px
+		+r(780)
+			padding-bottom: 20px
+	&_ptb-40
+		padding-top: 40px
+		padding-bottom: 40px
+	&_mob-side
+		+r(780)
+			padding-left: 15px
+			padding-right: 15px
 
 .btn
 	padding: 0
@@ -595,11 +666,6 @@ hr
 		+tr(.4s)
 		&:hover
 			background-color: #a61502
-.mt-70
-	margin-top: 70px
-.mt-30
-	margin-top: 30px
-
 
 
 .hide_mob
@@ -611,6 +677,9 @@ hr
 
 .is-center
 	text-align: center
+
+.is-shadow
+	box-shadow: 0px 3px 13px 0px rgba(217, 217, 217, 0.75)
 
 .more__mob
 	+r(780)
@@ -650,9 +719,49 @@ hr
 			+rotate(0)
 			+tr(.2s)
 
+.simple
+	&__list
+		padding: 0 0 0 30px
+		margin: 10px 0 0
+		list-style-type: none
+		+r(780)
+			padding: 0 0 0 20px
+	&__item
+		position: relative
+		margin-bottom: 10px
+		&:before
+			content: ''
+			position: absolute
+			top: .6em
+			left: -30px
+			width: 6px
+			height: 6px
+			border-radius: 100%
+			background-color: $red
+			+r(780)
+				left: -20px
+				top: .5em
+				width: 4px
+				height: 4px
+
+.alfa
+	&__list
+		padding: 0
+		margin: 10px 0
+		list-style-type: none
+
 
 .mod-center
 	+r(780)
 		text-align: center
 
+.mod_desc-offset
+	.title__sc
+		margin-bottom: .3em
+	.desc_l
+		margin-bottom: .1em
 
+
+.contact-text
+	.desc_l
+		margin-bottom: .4em

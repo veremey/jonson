@@ -463,7 +463,12 @@
 		'ortoped.html',
 		'surgery.html',
 		'preparation.html',
-		'psychiatry.html'
+		'psychiatry.html',
+		'consumer_goods.html',
+		'delivery.html',
+		'terms.html',
+		'confidentiality.html',
+		'about.html'
 	]
 },
 
@@ -561,6 +566,15 @@ __iconsData: {
 },
 
 __pages: [{
+                name: 'about',
+                href: 'about.html'
+             },{
+                name: 'confidentiality',
+                href: 'confidentiality.html'
+             },{
+                name: 'consumer_goods',
+                href: 'consumer_goods.html'
+             },{
                 name: 'content',
                 href: 'content.html'
              },{
@@ -569,6 +583,9 @@ __pages: [{
              },{
                 name: 'credo',
                 href: 'credo.html'
+             },{
+                name: 'delivery',
+                href: 'delivery.html'
              },{
                 name: 'disease',
                 href: 'disease.html'
@@ -611,4 +628,7 @@ __pages: [{
              },{
                 name: 'surgery',
                 href: 'surgery.html'
+             },{
+                name: 'terms',
+                href: 'terms.html'
              }]
