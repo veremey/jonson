@@ -195,6 +195,8 @@ hr
 [tabindex="0"]
 	outline: none
 
+.mt-0
+	margin-top: 0px
 .mt-70
 	margin-top: 70px
 .mt-30
@@ -251,6 +253,12 @@ hr
 	&_940
 		width: 96%
 		max-width: 940px
+		margin: 0 auto
+		+r(780)
+			width: 100%
+	&_960
+		width: 96%
+		max-width: 960px
 		margin: 0 auto
 		+r(780)
 			width: 100%
@@ -582,6 +590,40 @@ hr
 .mod_red
 	color: $red
 
+.wider
+	display: flex
+	align-items: center
+	justify-content: space-between
+	background-color: $red
+	padding: 25px 20px 30px
+	color: #fff
+	+r(700)
+		flex-direction: column
+		text-align: center
+	.title__sx
+		color: #fff
+		margin-bottom: .5em
+	.desc_m
+		color: #fff
+	.read
+		margin-top: 0px
+		+r(700)
+			margin-bottom: 0
+			margin-top: 20px
+		&.read_small .read__link
+			text-transform: uppercase
+			color: #fff
+		.icon-next
+			background-color: #fff
+			fill: $red
+			padding: 5px
+	&-wide
+		flex-basis: 68%
+	&__col
+		+r(700)
+			margin-bottom: 10px
+
+
 /*- box -*/
 .box
 	&_130
@@ -666,7 +708,6 @@ hr
 		+tr(.4s)
 		&:hover
 			background-color: #a61502
-
 
 .hide_mob
 	+r(1025)
@@ -760,7 +801,6 @@ hr
 		margin-bottom: .3em
 	.desc_l
 		margin-bottom: .1em
-
 
 .contact-text
 	.desc_l

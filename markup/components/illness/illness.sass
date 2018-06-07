@@ -72,6 +72,38 @@
 				width: 50%
 		&_column
 			flex-direction: column
+		&.mod_column
+			flex-direction: column
+			background-color: $red
+			.illnes
+				&__pic
+					display: inline-block
+					width: 100%
+					font-size: 0
+					vertical-align: top
+					margin: 0
+				&__img
+					width: 100%
+					max-width: 100%
+					height: auto
+					display: block
+				&__wrap
+					background-color: $red
+					padding: 30px 15px 50px
+				&__title
+					font-size: 24px
+					margin-bottom: .6em
+					color: #fff
+			.desc
+				color: #fff
+			.read
+				margin-top: 20px
+				&__link
+					color: #fff
+				.icon-next
+					background-color: #fff
+					fill: $red
+					padding: 5px
 	&__wrap
 		display: flex
 		flex-direction: column
@@ -151,6 +183,35 @@
 		.title__tt
 			+r(1025)
 				margin-bottom: 0
+	&_slider
+		flex-wrap: nowrap
+		margin: 0
+		font-size: 0
+		+box
+		+r(1200)
+			flex-wrap: wrap
+		.illnes__title
+			font-size: 24px
+		.illnes__wrap
+			min-height: 0
+		.illnes__item_1-3
+			margin-left: 0
+			width: 34%
+			box-shadow: none
+			background-color: #f0efed
+			+r(1200)
+				width: 100%
+				margin-bottom: 0
+				min-height: 0
+				text-align: center
+		.illnes__item_2-3
+			width: 66%
+			margin-left: 0
+			box-shadow: none
+			background-color: #f0efed
+			+r(1200)
+				width: 100%
+
 	&__logo
 		height: 46px
 		max-width: 100%
@@ -182,6 +243,18 @@
 			&:hover
 				&:after
 					background: $n url('../img/content/download-hover.png') 50% 50% no-repeat
+	&__slider
+		display: block
+		width: 100%
+		background-color: #ddd
+		&_item
+			position: relative
+			width: 100%
+			height: 100%
+		&_pic
+			position: absolute
+			top: 50%
+			left: 50%
 
 	.read
 		margin-top: auto
@@ -197,8 +270,10 @@
 	bottom: 0
 	left: 0
 	right: 0
+	background-color: rgba(0, 0, 0, .4)
 	&.is-active
 		display: block
+		z-index: 1000
 	&__content
 		+vcenter
 		width: 94%
@@ -208,6 +283,24 @@
 		box-shadow: 0px 3px 13px 0px rgba(217, 217, 217, 0.75)
 		+r(700)
 			padding: 20px 30px
+		&-height
+			max-height: 96%
+			overflow: auto
+			&::-webkit-scrollbar
+				width: 6px
+			&::-webkit-scrollbar-thumb
+				background: $red
+			.icon-close
+				cursor: pointer
+				+r(700)
+					top: 15px
+			.ppp__title
+				font-size: 24px
+			.ppp__desc
+				font-size: 16px
+				margin-bottom: 1em
+				+ar
+
 	&__wrap
 		margin-bottom: 50px
 	&__title

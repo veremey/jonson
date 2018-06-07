@@ -4,6 +4,15 @@ $(document).ready(function () {
 		e.preventDefault();
 		var $showMe = $(this).data('ppp');
 		$('.' + $showMe).addClass('is-active');
+
+	});
+
+	$('.illnes__slider').slick({
+		dots: false,
+		infinite: true,
+		speed: 500,
+		fade: true,
+		cssEase: 'linear'
 	});
 
 	// $(document).on('click touchstart', function(el){

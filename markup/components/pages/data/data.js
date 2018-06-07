@@ -20,6 +20,7 @@ var data = {pages: {
 		'delivery.html',
 		'terms.html',
 		'confidentiality.html',
-		'about.html'
+		'about.html',
+		'career.html'
 	]
 }};
