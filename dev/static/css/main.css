@@ -7633,12 +7633,29 @@ body .ui-tooltip {
   position: relative;
   width: 100%;
   height: 100%;
+  padding: 10px;
 }
 
-.illnes__slider_pic {
+.illnes__slider_img {
   position: absolute;
   top: 50%;
   left: 50%;
+  display: inline-block;
+  vertical-align: top;
+  max-width: calc(100% - 30px);
+  max-height: calc(100% - 30px);
+}
+
+@media only screen and (max-width: 768px) {
+  .illnes__slider .slick-prev {
+    left: 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .illnes__slider .slick-next {
+    right: 0px;
+  }
 }
 
 .illnes .read {
@@ -7677,7 +7694,7 @@ body .ui-tooltip {
   width: 94%;
   max-width: 780px;
   background-color: #fff;
-  padding: 50px 95px;
+  padding: 50px 40px;
   -webkit-box-shadow: 0px 3px 13px 0px rgba(217, 217, 217, 0.75);
           box-shadow: 0px 3px 13px 0px rgba(217, 217, 217, 0.75);
 }
@@ -7722,7 +7739,7 @@ body .ui-tooltip {
 }
 
 .ppp__wrap {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .ppp__title {
@@ -7731,6 +7748,12 @@ body .ui-tooltip {
   margin-bottom: 1em;
   font-family: 'PT Serif', serif;
   font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+  .ppp__title {
+    margin-top: 20px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -7796,6 +7819,12 @@ body .ui-tooltip {
   .ppp__btn {
     width: 100%;
     margin: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .ppp .icon-close {
+    top: 14px;
   }
 }
 

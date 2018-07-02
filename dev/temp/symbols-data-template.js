@@ -16,8 +16,8 @@ __iconsData: {
         },
     
         'icon-menu': {
-            width: '344px',
-            height: '344px'
+            width: '344.339px',
+            height: '344.339px'
         },
     
         'icon-next': {
@@ -30,4 +30,4 @@ __iconsData: {
             height: '306px'
         },
     
-}
+}
