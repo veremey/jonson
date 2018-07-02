@@ -6756,6 +6756,14 @@ body .ui-tooltip {
   fill: #000;
 }
 
+.header__btn [class^="icon"],
+.hdr__btn [class^="icon"] {
+  display: inline-block;
+  vertical-align: top;
+  width: 25px;
+  height: 25px;
+}
+
 @media only screen and (max-width: 1025px) {
   .header__btn_search,
   .hdr__btn_search {
